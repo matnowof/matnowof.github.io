@@ -1,61 +1,52 @@
-
-
 <!DOCTYPE HTML>
-<html id="black1" lang="pt-br" dir="ltr" type="text/css">
+<html lang="pt-br" dir="ltr" type="text/css">
 <head>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
-<title>Matemática NOW</title>
-
-
-	
-<!--    Equação     !-->
-
-<!--    Link para o MathJax     !-->
-<script>
-MathJax = {
-  loader: {load: ['input/asciimath', 'output/chtml', 'ui/menu']},
-};
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
-</script>
-<!--    Link para o MathJax     !-->	
-	
-	
-
-<!--    Script da Equação     !-->
-	<script src="media/template/gzip3a19.js?jquery.min-953da80f.js" type="text/javascript" defer="defer"></script>
-	<script src="media/template/gzip9ae1.js?jquery-noconflict-d298a39f.js" type="text/javascript" defer="defer"></script>
-	<script src="media/template/gzip180c.js?jquery-migrate.min-1d5dc76f.js" type="text/javascript" defer="defer"></script>
-	<script src="media/template/gzip2650.js?theme-ed4ff597.js" defer="defer" type="text/javascript"></script>
-	<script src="media/template/gzip4954.js?caret-22348a3f.js" defer="defer" type="text/javascript"></script>
-	<script src="media/template/gzipb07f.js?equacoes-0f6ec552.js" defer="defer" type="text/javascript"></script>
-<!--    Script da Equação     !-->
+<meta name="theme-color" content="#FFFFFF"/>
 
 
+<title>Matemática NOW APP Version</title>
 
-<!--    Fonte     !-->
-<script src="ASCIIMathML.js"></script>
-<!--    Fonte     !-->
-
-
-
-
-<!--    Equação     !-->
-
-
-
-    <script src="gzipdd81.js?jquery.min-8e44806d.js" type="text/javascript"></script>
+<link rel="apple-touch-icon" href="/imagens/logoapp.png">
+<link href="imagens/logoapp.png" rel="shortcut icon" />
+<link rel="apple-touch-icon" href="imagens/logoapp.png">
+	<script src="gzipdd81.js?jquery.min-8e44806d.js" type="text/javascript"></script>
 	<script src="gzip8252.js?jquery-noconflict-c7582c42.js" type="text/javascript"></script>
 	<script src="gzip8049.js?jquery-migrate.min-68e4b78f.js" type="text/javascript"></script>
 	<script src="gzipe0f1.js?jcookie-652f0218.js" defer="defer" type="text/javascript"></script>
+	<script src="gzip1041.js?basica-513a5be2.js" defer="defer" type="text/javascript"></script>
 	<script src="gzipea95.js?theme-615dccbd.js"></script>
+	<script src="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\historico.html"></script>
+	<script src="javascript_nova/gzip1041-2.js" type="text/javascript"></script>
 
+<link href="basica.html" rel="canonical" />
+
+   <script src="javascript_nova/bsc-a.min2.js"></script>
+   <script src="basica-a.min.js"></script>
+   <script src="basica-c.min.js"></script>
+   <script src="basica-e.min.js"></script>
+		<link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+		<script src= "js/uikit-icons.js" ></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+
+<!-- PWA !-->	
+<link rel="manifest" href="PWA/manifest.json">
+<script src="PWA/manifest.json" ></script>
+
+
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+
+<!-- PWA !-->
 
 
 <style type="text/css">
@@ -69,9 +60,8 @@ display:block;
 
 </style>
 
-
 <script>
-function mudatema1(el) {
+ function mudatema1(el) {
         var backgroundColor = document.getElementById(el).style.backgroundColor;
         if(backgroundColor == "rgb(124, 123, 121)")
             document.getElementById(el).style.backgroundColor = 'rgb(226, 226, 226)';
@@ -91,6 +81,16 @@ function mudatema1(el) {
 </script>
 
 <script>	
+ function mudatema4(el) {
+        var backgroundColor = document.getElementById(el).style.backgroundColor;
+        if(backgroundColor == "rgb(48, 48, 48)")
+            document.getElementById(el).style.backgroundColor = 'rgb(249, 249, 249)';
+        else
+            document.getElementById(el).style.backgroundColor = 'rgb(48, 48, 48)';
+			}
+</script>
+<!-- Cor da Letra -->
+<script>	
  function mudatema3(el) {
         var color = document.getElementById(el).style.color;
         if(color == "rgb(255, 255, 255)")
@@ -100,6 +100,16 @@ function mudatema1(el) {
 			}
 </script>
 
+<script>	
+ function mudatema5(el) {
+        var color = document.getElementById(el).style.color;
+        if(color == "rgb(255, 255, 255)")
+            document.getElementById(el).style.color = 'rgb(85, 85, 85)';
+        else
+            document.getElementById(el).style.color = 'rgb(255, 255, 255)';
+			}
+</script>
+<!-- Cor da Letra -->
 <style>
 .subtitulo{font-size:19px}.pdlf{ margin:15px;color:#fff;font-size:22px}.branco{color:#e8e8e8} .hover:hover{background-color:#e8e8e8}.branco 
 a{color:#fff}.inline{display:inline}.just{text-align:justify}#topnav{overflow:hidden}#topnav
@@ -108,39 +118,40 @@ a{float:right;display:block;color:#f2f2f2;text-align:center;padding:14px
 auto;border-radius:6px;box-shadow:10px 10px 30px 1px rgba(0, 0, 0, 0.2);padding:30px
 15px}#tophead{max-width:1050px;margin:20px
 auto;margin-top:40px;border-radius:10px}.azul{color:#00A3E0}.comandos{border-collapse:separate;margin:6px
-0px 0px 0px;width:100%;height:36px;background:#f7f7f7;color:#444;border:1px
-solid rgba(0, 0, 0, 0.1);border-bottom-color:rgba(0, 0, 0, 0.3);border-radius:4px;background-origin:border-box;background-image:-webkit-linear-gradient(top, #fff, #f9f9f9);background-image:linear-gradient(to bottom, #fff, #f9f9f9)}.comandos
-td{text-align:center;cursor:pointer;border:none;width:11.11%}.comandos td:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.2);border-radius:4px}.comandos td:active{background-color:#fff}.painel{width:auto;height:80px;border:1px
-solid #c4c4c4;padding:12px
+0px 0px 0px;width:100%;height:36px;background:rgb(249, 249, 249);color:rgb(85, 85, 85);border:1px
+solid rgba(0, 0, 0, 0.1);border-bottom-color:rgba(0, 0, 0, 0.3);border-radius:4px;background-origin:border-box;}.comandos
+td{text-align:center;cursor:pointer;border:none;width:11.11%}.comandos td:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.2);border-radius:4px}.comandos td:active{background-color:#fff}.painel{width:auto;height:50px;border:1px
+solid #c4c4c4;background-color:rgb(249, 249, 249);padding:12px
 0px 10px 0px;margin:9px
 
-0px 6px 0px;border-radius:4px;background-origin:border-box;background-image:-webkit-linear-gradient(top, #fff, #f9f9f9);background-image:linear-gradient(to bottom,#fff,#f9f9f9)}.subpainel{width:100%;text-align:right;padding:px 0px 0px 0px;margin:5px
-0px 0px 0px}#TIExp{border:none;box-shadow:none;height:30px;padding:6px;width:97%;font-size:30px;color:#555;background:transparent}#TIExp:focus{border:none;outline:none}.calculadora{width:100%;overflow:none;font-size:16px}.calculadoradesk
+0px 6px 0px;border-radius:4px;background-origin:border-box;}.subpainel{width:100%;text-align:right;padding:px 0px 0px 0px;margin:5px
+0px 0px 0px}#TIExp{border:none;box-shadow:none;height:30px;padding:6px;width:97%;color:rgb(85, 85, 85);font-size:25px;background:transparent}#TIExp:focus{border:none;outline:none}.calculadora{width:100%;overflow:none;font-size:16px}.calculadoradesk
 
 td{width:12.5%;text-align:center}.calculadoramobi
 td{width:20%;text-align:center}.bt{line-height:35px;cursor:pointer;border:1px
 
-solid #aaa;border-radius:4px;color:#444;position:relative;margin:0.5px}.bt:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0,0,0,0.2)}.bt:active{background-color:#fff;color:#444}.calcenv{background-color:#e2e2e2;position:relative;z-index:1; margin:0px;padding:10px;border-radius:4px;border:1px
+solid #aaa;border-radius:4px;color:#444;position:relative;margin:0.5px}.bt:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0,0,0,0.2)}.bt:active{background-color:#fff;color:#444}.calcenv{background-color:rgb(226, 226, 226);position:relative;z-index:1; margin:0px;padding:0px;border-radius:4px;border:1px
 solid #e4e1e1;box-shadow:0px 1px 10px 1px rgba(0,0,0,0.2)}.bt1{background-color:#FFFFFF}.bt2{background-color:#00A3E021}.bt3{background-color:#F9D37921}.bt4{background-color:#E0000014}.bt5{background-color:#51935821}.bt6{background-color:#00A3E021}.bt7{background-color:#28F9C82E}.bt8{background-color:#BCC2C02E}.bt5a{background-color:#C5DEF9}.bt3a{background-color:#3276CC0F}.bt4a{background-color:#1A4FCC24}.bt7a{background-color:#28DCF93D}.bt1l{background-color:#FFFFFF}.bt2l{background-color:#E000B321}.bt5l{background-color:#F9E9F3}.bt3l{background-color:#BD48CE3D}.bt4l{background-color:#5E0BD738}.bt7l{background-color:#E000B30F}.direit{text-align:right;width:100%;margin-top:5px;font-size:13px;color:#777}.quadf,.quade,.quadt,.quada,.quadl{display:inline-block;width:20px;height:14px;border-radius:4px;border:1px
 solid #e4e1e1;position:relative;top:3px}.boxmais{margin:0px;padding:20px
 0px 10px 0px;border-radius:4px;border:1px
-solid #F9F9F9;line-height:35px;color:#47677C;background-image:-webkit-linear-gradient(top, #fff, #f9f9f9);background-image:linear-gradient(to bottom, #fff, #f9f9f9)}.boxmais
+solid #F9F9F9;line-height:35px;color:#47677C;}.boxmais
 a{font-size:14px;color:#444}.spacoacima{margin-top:30px}.spaco{padding:10px}#rodape{text-align:center;color:#fff;margin:30px
 0px 20px 0px;line-height:30px}#rodape
-a{color:#fff}#LBSubResu{padding:10px 
+a{color:#fff}#LBSubResu{padding:0px 
 0px 0px 8px}.floatd{float:right}.mtab{margin-right:10px;margin-bottom:10px;margin-top:10px;line-height:20px;vertical-align:middle !important}.mtab
 input{width:100%}.liso{list-style-type:none}.botslin{width:100%;text-align:left;margin-bottom:5px}.botslin
 a{color:#444}.subtitm{padding-top:10px;padding-bottom:10px;font-size:15px}.cemp{background-color:#ecf4f7;height:25px;padding:5px;border:1px
 solid #b9b8b8;border-radius:5px;width:100%}.cemp:focus{background-color:#ddf6ff;border:1px
 solid #4b89ff;outline:none}.boxresult{width:auto;max-height:400px;overflow-y:auto;overflow-x:hidden}.resultado{width:auto;padding:10px;border-radius:5px;margin:5px
-3px 0px 0px;background-color:#def0f7;border:1px
+3px 0px 0px;background-color:#def0f775;border:1px
 solid #b8bfce}.tbresultado{width:100%;margin-left:2px}.tbresultado input[type=text]{background:transparent;border:none;outline:none;padding-left:2px;font-size:16px;width:98%;position:relative;top:-2px}.pontador{cursor:pointer}.resu2l1i{font-weight:bold}.subtit{font-weight:bolder;font-size:18px}#painelConv{width:auto;display:none;border:1px
 solid #c4c4c4;padding:10px;margin:9px
  
-0px 6px 0px;border-radius:4px;background-origin:border-box;background-image:-webkit-linear-gradient(top, #fff, #f9f9f9);background-image:linear-gradient(to bottom,#fff,#f9f9f9);color:#555;height:auto}.tbresusubtb{width:100%}.italico{font-style:italic}.uk-nav-navbar2>li>a{color:#555;font-size:14px}.uk-nav-navbar2>li>a:hover,.uk-nav-navbar2>li>a:focus{background:#009dd8;color:#fff;outline:none;box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.2);text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2)}.uk-nav-navbar2 .uk-nav-header{color:#999}.uk-nav-navbar2 .uk-nav-divider{border-top:1px solid #ddd}.uk-nav-navbar2 ul
-a{color:#07D}.uk-nav-navbar2 ul a:hover{color:#059}.uk-navbar2{background:#f7f7f7;color:#444;border:1px
-solid rgba(0, 0, 0, 0.1);border-bottom-color:rgba(0, 0, 0, 0.3);border-radius:4px;background-origin:border-box;background-image:-webkit-linear-gradient(top, #fff, #eee);background-image:linear-gradient(to bottom,#fff,#eee)}.uk-navbar2:before,.uk-navbar2:after{content:"";display:table}.uk-navbar2:after{clear:both}.uk-navbar2-nav{margin:0;padding:0;list-style:none;float:left}.uk-navbar2-nav>li{float:left;position:relative}.uk-navbar2-nav>li>a{display:block;box-sizing:border-box;text-decoration:none;height:40px;padding:0
-3.9px;line-height:40px;color:#555;font-size:9px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal}.uk-navbar2-nav>li>a[href='#']{cursor:text}.uk-navbar2-nav>li:hover>a,.uk-navbar2-nav>li>a:focus,.uk-navbar2-nav>li.uk-open>a{background-color:#f5f5f5;color:#555;outline:none}.uk-navbar2-nav>li>a:active{background-color:#ddd;color:#555}.uk-navbar2-nav>li.uk-active>a{background-color:#f5f5f5;color:#555}.uk-navbar2-nav .uk-navbar2-nav-subtitle{line-height:28px}.uk-navbar2-nav-subtitle>div{margin-top:-6px;font-size:10px;line-height:12px}.uk-navbar2-content,.uk-navbar2-brand,.uk-navbar2-toggle{box-sizing:border-box;display:block;height:40px;padding:0
+0px 6px 0px;border-radius:4px;background-origin:border-box;background-color:rgb(249, 249, 249);color:#555555;height:auto}.tbresusubtb{width:100%}.italico{font-style:italic}.uk-nav-navbar2>li>a{color:#555555;font-size:14px}.uk-nav-navbar2>li>a:hover,.uk-nav-navbar2>li>a:focus{background:#009dd8;color:#fff;outline:none;box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.2);text-shadow:0 -1px 0 rgba(0, 0, 0, 0.2)}.uk-nav-navbar2 .uk-nav-header{color:#999}.uk-nav-navbar2 .uk-nav-divider{border-top:1px solid #ddd}.uk-nav-navbar2 ul
+a{color:#07D}.uk-nav-navbar2 ul a:hover{color:#059}.uk-navbar2{background:rgb(249, 249, 249);color:#444;border:1px
+solid rgba(0, 0, 0, 0.1);border-bottom-color:rgba(0, 0, 0, 0.3);border-radius:4px;background-origin:border-box;}.uk-navbar2:before,.uk-navbar2:after{content:"";display:table}.uk-navbar2:after{clear:both}.uk-navbar2-nav{margin:0;padding:0;list-style:none;float:left}.uk-navbar2-nav>li{float:left;position:relative}.uk-navbar2-nav>li>a{display:block;box-sizing:border-box;text-decoration:none;height:40px;padding:0
+3.9px;line-height:40px;color:rgb(85, 85, 85);font-size:9px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal}.uk-navbar2-nav>li>a[href='#']{cursor:text}.uk-navbar2-nav>li:hover>a,.uk-navbar2-nav>li>a:focus,.uk-navbar2-nav>li.uk-open>a{background-color:rgb(249, 249, 249);color:#444444
+;outline:none}.uk-navbar2-nav>li>a:active{background-color:#ddd;color:#555}.uk-navbar2-nav>li.uk-active>a{background-color:#f5f5f5;color:#555}.uk-navbar2-nav .uk-navbar2-nav-subtitle{line-height:28px}.uk-navbar2-nav-subtitle>div{margin-top:-6px;font-size:10px;line-height:12px}.uk-navbar2-content,.uk-navbar2-brand,.uk-navbar2-toggle{box-sizing:border-box;display:block;height:40px;padding:0
 15px;float:left}.uk-navbar2-content:before,.uk-navbar2-brand:before,.uk-navbar2-toggle:before{content:'';display:inline-block;height:100%;vertical-align:middle}.uk-navbar2-content+.uk-navbar2-content:not(.uk-navbar2-center){padding-left:0}.uk-navbar2-content>a:not([class]){color:#555}.uk-navbar2-content>a:not([class]):hover{color:#555}.uk-navbar2-brand{font-size:18px;color:#555;text-decoration:none}.uk-navbar2-brand:hover,.uk-navbar2-brand:focus{color:#555;text-decoration:none;outline:none}.uk-navbar2-toggle{font-size:18px;color:#555;text-decoration:none}.uk-navbar2-toggle:hover,.uk-navbar2-toggle:focus{color:#555;text-decoration:none;outline:none}.uk-navbar2-toggle:after{content:"\f0c9";font-family:FontAwesome;vertical-align:middle}.uk-navbar2-toggle-alt:after{content:"\f0c9"}.uk-navbar2-center{float:none;text-align:center;max-width:50%;margin-left:auto;margin-right:auto}.uk-navbar2-flip{float:right}uk-dropdown-navbar2{margin-top:0;background:#f5f5f5;color:#555;border:1px
 solid #ccc}.uk-open>.uk-dropdown-navbar2{-webkit-animation:uk-slide-top-fixed 0.2s ease-in-out;animation:uk-slide-top-fixed 0.2s ease-in-out}.stldp{font-size:14px!important}@media (max-width: 800px){.calc-hidden-small{display:none !important}}@media (min-width: 801px){.calc-visible-small{display:none !important}}
 </style>
@@ -190,11 +201,11 @@ solid #ddd;padding:25px
 0px 20px 0px;width:98%}.cxvmd{margin-top:5px;color:#47677}.pdbtn{margin:10px
 0px 15px 5px}.cem{margin-top:5px}.blocodf{margin:10px
 0px;padding:20px
-10px;background-color:rgb(249, 249, 249);border-radius:8px}.blocodfi{margin:10px
+10px;background-color:#fafafa;border-radius:8px}.blocodfi{margin:10px
 0px 0px 0px;padding:20px
-10px;background-color:#fafafa;border-radius:8px;text-align:center}.txtcentro{text-align:center!important}.chartdivgraf{width:100%;height:500px}.inputsconvtdv{width:100%;text-align:center;margin-bottom:30px}.blocoibc{display:inline-block;text-align:center}.flotlftblue{background-color:#2794BD21}.flotlftgreen{background-color:#51935821}.flotlftdgreen{background-color:#3bd3612e}.flotlftclear{background-color:#C8858521}.flotlftdclear{background-color:#B9AC8321}.flotlft{font-size:16px;line-height:30px;cursor:pointer;border:1px
+10px;background-color:#fafafa;border-radius:8px;text-align:center}.txtcentro{text-align:center!important}.chartdivgraf{width:100%;height:500px}.inputsconvtdv{width:100%;text-align:center;margin-bottom:30px}.blocoibc{display:inline-block;text-align:center}.flotlftblue{background-color:#2794BD21}.flotlftgreen{background-color:#51935821}.flotlftdgreen{background-color:#3bd3612e}.flotlftclear{background-color:#C8858521}.flotlftdclear{background-color:#B9AC8321}.flotlft{font-size:16px;line-height:35px;cursor:pointer;border:1px
 solid #aaa;border-radius:4px;color:#444;position:relative;margin:3px
-0.5px;display:inline-block;text-align:center;width:95%}.flotlft:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);border-radius:4px}#previewasc{width:100%;text-align:center;margin-top:30px;height:50px;font-size:18px}.quad{display:inline-block;width:20px;height:14px;border-radius:4px;border:1px
+0.5px;display:inline-block;text-align:center;width:95%}.flotlft:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);border-radius:4px}#previewasc{width:100%;text-align:center;margin-top:30px;height:80px;font-size:18px}.quad{display:inline-block;width:20px;height:14px;border-radius:4px;border:1px
 solid #e4e1e1;position:relative;top:3px}.resqst{background-color:#f7fbf9!important;text-align:center;font-size:large;color:#444!important}.divpalchav{width:100%;text-align:center;margin-top:20px}.esp_up{margin-top:10px!important}.text13{font-size:13px}.uk-datepicker{z-index:1050;width:300px;-webkit-animation:uk-fade .2s ease-in-out;animation:uk-fade .2s ease-in-out;-webkit-transform-origin:0 0;transform-origin:0 0
 margin-top:6px;background:#fff;color:#666;left:-1px;box-shadow:0 2px 5px rgba(0,0,0,.1);width:290px !important}.uk-datepicker-nav{margin-bottom:15px;text-align:center;line-height:20px}.uk-datepicker-nav:after,.uk-datepicker-nav:before{content:"";display:table}.uk-datepicker-nav:after{clear:both}.uk-datepicker-nav
 a{color:#666;text-decoration:none}.uk-datepicker-nav a:hover{color:#666}.uk-datepicker-previous{float:left}.uk-datepicker-next{float:right}.uk-datepicker-next:after,.uk-datepicker-previous:after{width:20px;font-family:FontAwesome}.uk-datepicker-previous:after{content:"\f053"}.uk-datepicker-next:after{content:"\f054"}.uk-datepicker-table{width:100%}.uk-datepicker-table td,
@@ -205,7 +216,7 @@ a{display:block;width:26px;line-height:24px;text-align:center;color:#666;text-de
 solid transparent;border-radius:4px;background-origin:border-box}a.uk-datepicker-table-muted{color:#999}.uk-datepicker-table a:focus,
 .uk-datepicker-table a:hover{background-color:#fafafa;color:#666;outline:0;border-color:rgba(0,0,0,.2);border-bottom-color:rgba(0,0,0,.3);text-shadow:0 1px 0 #fff}.uk-datepicker-table a:active{background-color:#f5f5f5;color:#666;border-color:rgba(0,0,0,.2);border-top-color:rgba(0,0,0,.3);background-image:none;box-shadow:inset 0 2px 4px rgba(0,0,0,.1)}.uk-datepicker-table a.uk-active{background:#009dd8;color:#fff;border:1px
 solid rgba(0,0,0,.2);border-bottom-color:rgba(0,0,0,.4);background-origin:border-box;background-image:-webkit-linear-gradient(top,#00b4f5,#008dc5);background-image:linear-gradient(to bottom,#00b4f5,#008dc5);text-shadow:0 -1px 0 rgba(0,0,0,.2)}
-html{font:normal 14px / 20px opensans,helvetica,arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:rgb(226, 226, 226);color:#555}body{margin:0}a{background:transparent}a:active,a:hover{outline:0}a,.uk-link{color:#3f6488;text-decoration:none;cursor:pointer}a:hover,.uk-link:hover{color:#222;text-decoration:underline}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp{font-size:12px;font-family:Consolas,monospace,serif;color:#d05;white-space:nowrap}em{color:#d05}ins{background:#ffa;color:#555;text-decoration:none}mark{background:#ffa;color:#555}q{font-style:italic}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,canvas,img,svg,video{max-width:100%;height:auto;box-sizing:border-box;border:1px solid rgb(85, 85, 85);border-radius:4px;padding:7px}.uk-img-preserve,
+html{font:normal 14px / 20px opensans,helvetica,arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#f2f2f2;color:#555}body{margin:0}a{background:transparent}a:active,a:hover{outline:0}a,.uk-link{color:#3f6488;text-decoration:none;cursor:pointer}a:hover,.uk-link:hover{color:#222;text-decoration:underline}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp{font-size:12px;font-family:Consolas,monospace,serif;color:#d05;white-space:nowrap}em{color:#d05}ins{background:#ffa;color:#555;text-decoration:none}mark{background:#ffa;color:#555}q{font-style:italic}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,canvas,img,svg,video{max-width:100%;height:auto;box-sizing:border-box}.uk-img-preserve,
 .uk-img-preserve audio,
 .uk-img-preserve canvas,
 .uk-img-preserve img,
@@ -349,7 +360,7 @@ legend{width:100%;border:0;padding:0;padding-bottom:15px;font-size:18px;line-hei
 dotted}.uk-button-mini{min-height:20px;padding:0
 6px;line-height:20px;font-size:11px}.uk-button-small{min-height:25px;padding:0
 10px;line-height:25px;font-size:12px}.uk-button-large{min-height:40px;padding:0
-15px;line-height:40px;font-size:16px}.uk-button-group{display:inline-block;vertical-align:middle;position:relative;font-size:0.001px;white-space:nowrap}.uk-button-group>*{display:inline-block}.uk-button-group .uk-button{vertical-align:top}.uk-button-dropdown{display:inline-block;vertical-align:middle;position:relative}@font-face{font-family:'FontAwesome';src:url("../../templates/jp-hello/warp/vendor/uikit/fonts/fontawesome-webfont.woff2") format('woff2'), url("../../templates/jp-hello/warp/vendor/uikit/fonts/fontawesome-webfont.woff") format("woff"), url("../../templates/jp-hello/warp/vendor/uikit/fonts/fontawesome-webfont.ttf") format("truetype");font-weight:normal;font-style:normal}[class*='uk-icon-']{font-family:FontAwesome;display:inline-block;font-weight:normal;font-style:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;vertical-align:-15%}[class*='uk-icon-'],[class*='uk-icon-']:hover,[class*='uk-icon-']:focus{text-decoration:none}.uk-icon-small{font-size:150%;vertical-align:-10%}.uk-icon-medium{font-size:200%;vertical-align:-16%}.uk-icon-large{font-size:500%;vertical-align:-22%}.uk-icon-justify{width:1em;text-align:center}.uk-icon-spin{display:inline-block;-webkit-animation:uk-rotate 2s infinite linear;animation:uk-rotate 2s infinite linear}.uk-icon-hover{color:#999}.uk-icon-hover:hover{color:#555}.uk-icon-button{box-sizing:border-box;display:inline-block;width:35px;height:35px;border-radius:100%;background:#39f;line-height:35px;color:#fff;font-size:18px;text-align:center}.uk-icon-button:hover,.uk-icon-button:focus{background-color:#f5f5f5;color:#777;outline:none}.uk-icon-button:active{background-color:#ddd;color:#555}.uk-icon-long-arrow-down:before{content:"\f175"}.uk-icon-long-arrow-up:before{content:"\f176"}.uk-icon-th-large:before{content:"\f009"}.uk-icon-arrows-v:before{content:"\f07d"}.uk-icon-circle-o:before{content:"\f10c"}.uk-icon-caret-up:before{content:"\f0d8"}.uk-icon-thumbs-o-up:before{content:"\f087"}.uk-icon-calculator:before{content:"\f1ec"}.uk-icon-money:before{content:"\f0d6"}.uk-icon-plus:before{content:"\f067"}.uk-icon-star-o:before{content:"\f006"}.uk-icon-tasks:before{content:"\e000"}.uk-icon-percent:before{content:"\f295"}.uk-icon-line-chart:before{content:"\f201"}.uk-icon-area-chart:before{content:"\f1fe"}.uk-icon-clock-o:before{content:"\f017"}.uk-icon-minus:before{content:"\f068"}.uk-icon-chevron-left:before{content:"\f053"}.uk-icon-chevron-right:before{content:"\f054"}.uk-icon-barcode:before{content:"\f02a"}.uk-icon-gamepad:before{content:"\f11b"}.uk-icon-calendar:before{content:"\f073"}.uk-icon-smile-o:before{content:"\f118"}.uk-icon-child:before{content:"\f1ae"}.uk-icon-stethoscope:before{content:"\f0f1"}.uk-icon-user:before{content:"\f007"}.uk-icon-tree:before{content:"\f1bb"}.uk-icon-gift:before{content:"\f06b"}.uk-icon-book:before{content:"\f02d"}.uk-icon-search:before{content:"\f002"}.uk-icon-twitter:before{content:"\f099"}.uk-icon-filter:before{content:"\f0b0"}.uk-icon-upload:before{content:"\f0ee"}.uk-icon-download:before{content:"\f019"}.uk-icon-level-up:before{content:"\f148"}.uk-icon-exclamation:before{content:"\f12a"}.uk-icon-home:before{content:"\f015"}.uk-icon-at:before{content:"\f1fa"}.uk-icon-wrench:before{content:"\f0ad"}.uk-icon-balance-scale:before{content:"\f24e"}.uk-icon-hdd-o:before{content:"\f0a0"}.uk-icon-random:before{content:"\f074"}.uk-icon-refresh:before{content:"\f021"}.uk-icon-remove:before,.uk-icon-close:before,.uk-icon-times:before{content:"\f00d"}.uk-icon-gear:before,.uk-icon-cog:before{content:"\f013"}.uk-icon-gears:before,.uk-icon-cogs:before{content:"\f085"}.uk-icon-edit:before,.uk-icon-pencil-square-o:before{content:"\f044"}.uk-icon-mail-forward:before,.uk-icon-share:before{content:"\f064"}.uk-icon-bar-chart-o:before,.uk-icon-bar-chart:before{content:"\f080"}.uk-icon-facebook-f:before,.uk-icon-facebook:before{content:"\f09a"}.uk-icon-copy:before,.uk-icon-files-o:before{content:"\f0c5"}.uk-icon-navicon:before,.uk-icon-reorder:before,.uk-icon-bars:before{content:"\f0c9"}.uk-icon-flash:before,.uk-icon-bolt:before{content:"\f0e7"}.uk-icon-mail-reply:before,.uk-icon-reply:before{content:"\f112"}.uk-icon-dollar:before,.uk-icon-usd:before{content:"\f155"}.uk-icon-bitcoin:before,.uk-icon-btc:before{content:"\f15a"}.uk-icon-font-awesome:before,.uk-icon-fa:before{content:"\f2b4"}.uk-icon-sign-language:before,.uk-icon-signing:before{content:"\f2a7"}.uk-close::-moz-focus-inner{border:0;padding:0}.uk-close{-webkit-appearance:none;margin:0;border:none;overflow:visible;font:inherit;color:inherit;text-transform:none;padding:0;background:transparent;display:inline-block;box-sizing:content-box;width:20px;line-height:20px;text-align:center;vertical-align:middle;opacity:0.3}.uk-close:after{display:block;content:"\f00d";font-family:FontAwesome}.uk-close:hover,.uk-close:focus{opacity:0.5;outline:none;color:inherit;text-decoration:none;cursor:pointer}.uk-close-alt{padding:2px;border-radius:50%;background:#eee;opacity:1}.uk-close-alt:hover,.uk-close-alt:focus{opacity:1}.uk-close-alt:after{opacity:0.5}.uk-close-alt:hover:after,.uk-close-alt:focus:after{opacity:0.8}.uk-badge{display:inline-block;padding:0
+15px;line-height:40px;font-size:16px}.uk-button-group{display:inline-block;vertical-align:middle;position:relative;font-size:0.001px;white-space:nowrap}.uk-button-group>*{display:inline-block}.uk-button-group .uk-button{vertical-align:top}.uk-button-dropdown{display:inline-block;vertical-align:middle;position:relative}@font-face{font-family:'FontAwesome';src:url("../../templates/jp-hello/warp/vendor/uikit/fonts/fontawesome-webfont.woff2") format('woff2'), url("../../templates/jp-hello/warp/vendor/uikit/fonts/fontawesome-webfont.woff") format("woff"), url("../../templates/jp-hello/warp/vendor/uikit/fonts/fontawesome-webfont.ttf") format("truetype");font-weight:normal;font-style:normal}[class*='uk-icon-']{font-family:FontAwesome;display:inline-block;font-weight:normal;font-style:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;vertical-align:-15%}[class*='uk-icon-'],[class*='uk-icon-']:hover,[class*='uk-icon-']:focus{text-decoration:none}.uk-icon-small{font-size:150%;vertical-align:-10%}.uk-icon-medium{font-size:200%;vertical-align:-16%}.uk-icon-large{font-size:500%;vertical-align:-22%}.uk-icon-justify{width:1em;text-align:center}.uk-icon-spin{display:inline-block;-webkit-animation:uk-rotate 2s infinite linear;animation:uk-rotate 2s infinite linear}.uk-icon-hover{color:#999}.uk-icon-hover:hover{color:#555}.uk-icon-button{box-sizing:border-box;display:inline-block;width:35px;height:35px;border-radius:100%;background:#39f;line-height:35px;color:#fff;font-size:18px;text-align:center}.uk-icon-button:hover,.uk-icon-button:focus{background-color:#f5f5f5;color:#777;outline:none}.uk-icon-button:active{background-color:#ddd;color:#555}.uk-icon-long-arrow-down:before{content:"\f175"}.uk-icon-long-arrow-up:before{content:"\f176"}.uk-icon-th-large:before{content:"\f009"}.uk-icon-arrows-v:before{content:"\f07d"}.uk-icon-circle-o:before{content:"\f10c"}.uk-icon-caret-down:before{content:"\f0d7"}.uk-icon-caret-up:before{content:"\f0d8"}.uk-icon-thumbs-o-up:before{content:"\f087"}.uk-icon-calculator:before{content:"\f1ec"}.uk-icon-money:before{content:"\f0d6"}.uk-icon-plus:before{content:"\f067"}.uk-icon-star-o:before{content:"\f006"}.uk-icon-tasks:before{content:"\e000"}.uk-icon-percent:before{content:"\f295"}.uk-icon-line-chart:before{content:"\f201"}.uk-icon-area-chart:before{content:"\f1fe"}.uk-icon-clock-o:before{content:"\f017"}.uk-icon-minus:before{content:"\f068"}.uk-icon-chevron-left:before{content:"\f053"}.uk-icon-chevron-right:before{content:"\f054"}.uk-icon-barcode:before{content:"\f02a"}.uk-icon-gamepad:before{content:"\f11b"}.uk-icon-calendar:before{content:"\f073"}.uk-icon-smile-o:before{content:"\f118"}.uk-icon-child:before{content:"\f1ae"}.uk-icon-stethoscope:before{content:"\f0f1"}.uk-icon-user:before{content:"\f007"}.uk-icon-tree:before{content:"\f1bb"}.uk-icon-gift:before{content:"\f06b"}.uk-icon-book:before{content:"\f02d"}.uk-icon-search:before{content:"\f002"}.uk-icon-twitter:before{content:"\f099"}.uk-icon-filter:before{content:"\f0b0"}.uk-icon-upload:before{content:"\f0ee"}.uk-icon-download:before{content:"\f019"}.uk-icon-level-up:before{content:"\f148"}.uk-icon-exclamation:before{content:"\f12a"}.uk-icon-home:before{content:"\f015"}.uk-icon-at:before{content:"\f1fa"}.uk-icon-wrench:before{content:"\f0ad"}.uk-icon-balance-scale:before{content:"\f24e"}.uk-icon-hdd-o:before{content:"\f0a0"}.uk-icon-random:before{content:"\f074"}.uk-icon-refresh:before{content:"\f021"}.uk-icon-remove:before,.uk-icon-close:before,.uk-icon-times:before{content:"\f00d"}.uk-icon-gear:before,.uk-icon-cog:before{content:"\f013"}.uk-icon-gears:before,.uk-icon-cogs:before{content:"\f085"}.uk-icon-edit:before,.uk-icon-pencil-square-o:before{content:"\f044"}.uk-icon-mail-forward:before,.uk-icon-share:before{content:"\f064"}.uk-icon-bar-chart-o:before,.uk-icon-bar-chart:before{content:"\f080"}.uk-icon-facebook-f:before,.uk-icon-facebook:before{content:"\f09a"}.uk-icon-copy:before,.uk-icon-files-o:before{content:"\f0c5"}.uk-icon-navicon:before,.uk-icon-reorder:before,.uk-icon-bars:before{content:"\f0c9"}.uk-icon-flash:before,.uk-icon-bolt:before{content:"\f0e7"}.uk-icon-mail-reply:before,.uk-icon-reply:before{content:"\f112"}.uk-icon-dollar:before,.uk-icon-usd:before{content:"\f155"}.uk-icon-bitcoin:before,.uk-icon-btc:before{content:"\f15a"}.uk-icon-font-awesome:before,.uk-icon-fa:before{content:"\f2b4"}.uk-icon-sign-language:before,.uk-icon-signing:before{content:"\f2a7"}.uk-close::-moz-focus-inner{border:0;padding:0}.uk-close{-webkit-appearance:none;margin:0;border:none;overflow:visible;font:inherit;color:inherit;text-transform:none;padding:0;background:transparent;display:inline-block;box-sizing:content-box;width:20px;line-height:20px;text-align:center;vertical-align:middle;opacity:0.3}.uk-close:after{display:block;content:"\f00d";font-family:FontAwesome}.uk-close:hover,.uk-close:focus{opacity:0.5;outline:none;color:inherit;text-decoration:none;cursor:pointer}.uk-close-alt{padding:2px;border-radius:50%;background:#eee;opacity:1}.uk-close-alt:hover,.uk-close-alt:focus{opacity:1}.uk-close-alt:after{opacity:0.5}.uk-close-alt:hover:after,.uk-close-alt:focus:after{opacity:0.8}.uk-badge{display:inline-block;padding:0
 5px;background:#39f;font-size:11px;font-weight:normal;line-height:15px;color:#fff;text-align:center;vertical-align:middle;text-transform:none}a.uk-badge:hover{color:#fff}.uk-badge-notification{box-sizing:border-box;min-width:18px;border-radius:500px;font-size:12px;line-height:18px}.uk-badge-success{background-color:#8cc14c}.uk-badge-warning{background-color:#faa732}.uk-badge-danger{background-color:#da314b}.uk-alert{margin-bottom:15px;padding:10px;background:#ebf7fd;color:#2d7091}*+.uk-alert{margin-top:15px}.uk-alert>:last-child{margin-bottom:0}.uk-alert h1,
 .uk-alert h2,
 .uk-alert h3,
@@ -528,6 +539,7 @@ a{color:#fff}*+p,*+hr,*+ul,*+ol,*+dl,*+blockquote,*+pre,*+address,*+fieldset,*+f
 
 .topnav a {
   color: white;
+  padding: 4px 6px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -563,7 +575,6 @@ a{color:#fff}*+p,*+hr,*+ul,*+ol,*+dl,*+blockquote,*+pre,*+address,*+fieldset,*+f
   overflow: hidden;
   background-color: #333;
   position: relative;
-  max-height:60px;
 }
 
 .topnavdw #myLinks {
@@ -601,13 +612,6 @@ left:90%;
 top:0px;
 width:16px;
 }
-
-.preto-equa{
-background-color:rgb(250, 250, 250);
-width:100%;
-height:100%;
-padding:20px;
-}
 </style>
 
 
@@ -619,11 +623,6 @@ padding:20px;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/abel/v12/MwQ5bhbm2POE2V9BPQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-mjx-mstyle{
-border:1px solid rgb(85, 85, 85);
-border-radius:4px;
-padding:7px;
 }
 
 </style>
@@ -720,7 +719,7 @@ img.hover-shadow {
 	<div class="uk-offcanvas-bar spaco">		
     	<ul class="uk-list branco ">
         	<li>
-            	<a class="off-font" href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\indexApp1.html"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia2.png" width="60px"> </i> Modos de Calculo</a>
+            	<a class="off-font" onclick="Mudarestado('textmenu1')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia2.png" width="60px"> </i> Modos de Calculo</a>
     			<div>
                 	<ul>
                      	<li id="textmenu1" style="display:none;"><a onclick="UIkit.offcanvas.hide();menuescolhido(1)" style="color:#F0F285">Assistido</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(3)" style="color:#CC7675">Expressão</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(2)" style="color:#83C377">Convencional</a></li>                   
@@ -728,7 +727,7 @@ img.hover-shadow {
     			</div>
     		</li>
     		<li >
-    			<a class="off-font" href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\indexApp1.html"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia8.png" width="60px"></i> Funções</a>
+    			<a class="off-font" onclick="Mudarestado('textmenu2')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia8.png" width="60px"></i> Funções</a>
     		    <div>
                 	<ul>
                      	<li id="textmenu2" style="display:none;"><a onclick="UIkit.offcanvas.hide();MudarestadoCAL('calcuPDR')" style="color:#25E8E8">Padrão</a> - <a onclick="UIkit.offcanvas.hide();MudarestadoCAL('calcuTRI')" style="color:#83C377">Triogonometria</a> - <a onclick="UIkit.offcanvas.hide();MudarestadoCAL('calcuEST')" style="color:#CC7675">Estatística</a> - <a onclick="UIkit.offcanvas.hide();MudarestadoCAL('calcuFIN')" style="color:#F0F285"> Financeira</a></li>                   
@@ -736,7 +735,7 @@ img.hover-shadow {
     			</div>
 			</li>
     		<li>
-    			<a class="off-font" href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\indexApp1.html"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia5.png" width="60px"></i> Arredondamento</a>
+    			<a class="off-font" onclick="Mudarestado('textmenu3')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia5.png" width="60px"></i> Arredondamento</a>
                <div>
                 	<ul>
                      	<li id="textmenu3" style="display:none;"><a onclick="UIkit.offcanvas.hide();menuescolhido(4)" >Sem Arredondamento</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(5)">1 casa decimal</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(6)">2 casa decimal</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(7)">3 casa decimal</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(8)" >4 casa decimal</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(9)" >5 casa decimal</a></li>                   
@@ -744,7 +743,7 @@ img.hover-shadow {
     			</div>
     		</li>
 			<li>
-    			<a class="off-font" href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\indexApp1.html"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia10.png" width="60px"></i> Programação</a>
+    			<a class="off-font" onclick="Mudarestado('textmenu4')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia10.png" width="60px"></i> Programação</a>
     		    <div>
                 	<ul>
                      	<li id="textmenu4" style="display:none;"><a onclick="UIkit.offcanvas.hide();menuescolhido(27)" >Funções Programadas...</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(15)" >Expressões...</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(16)" >Salvar Expressão</a></li>                   
@@ -752,15 +751,15 @@ img.hover-shadow {
     			</div>
 			</li>
     		<li>
-    			<a class="off-font" href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\indexApp1.html"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia4.png" width="60px"></i> Histórico</a>
+    			<a class="off-font" onclick="Mudarestado('textmenu5')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia4.png" width="60px"></i> Histórico</a>
     		    <div>
                 	<ul>
-                     	<li id="textmenu5" style="display:none;"><a onclick="UIkit.offcanvas.hide();menuescolhido(17)" >Salvar</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(18)" >Limpar</a> </li>                   
+                     	<li id="textmenu5" style="display:none;"><a onclick="UIkit.offcanvas.hide();menuescolhido(17)" >Salvar</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(18);" >Limpar</a> </li>                   
     				</ul>
     			</div>
 			</li>
 			<li>
-    			<a class="off-font" href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\indexApp1.html"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia14.png" width="60px"></i> Memória</a>
+    			<a class="off-font" onclick="Mudarestado('textmenu6')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia14.png" width="60px"></i> Memória</a>
     		    <div>
                 	<ul>
                      	<li id="textmenu6" style="display:none;"><a onclick="UIkit.offcanvas.hide();menuescolhido(19)" >Mostar</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(20)" >Inserir</a> - <a onclick="UIkit.offcanvas.hide();menuescolhido(21)" >Gravar</a>- <a onclick="UIkit.offcanvas.hide();menuescolhido(22)" >Limpar</a></li>                   
@@ -771,7 +770,7 @@ img.hover-shadow {
     			<a class="off-font" onclick="Mudarestado('textmenu7')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia13.png" width="60px"></i> Tema</a>
     		    <div>
                 	<ul>
-                     	<li id="textmenu7" style="display:none;"><a onclick="UIkit.offcanvas.hide();mudatema1('black1');mudatema2('black2');mudatema3('black1');" >Mudar Tema</a>               
+                     	<li id="textmenu7" style="display:none;"><div onclick="mudatema1('black1');mudatema2('black2');mudatema2('painelConv');mudatema3('painelConv');mudatema3('TIExp');mudatema2('blacktable');"><a onclick="UIkit.offcanvas.hide();mudatema4('black4');mudatema3('LBSubResu');mudatema3('black3');mudatema5('black5');;mudatema5('black6');mudatema5('black7');mudatema5('black8');mudatema4('black3');mudatema4('black5');mudatema4('black6');mudatema4('black7');mudatema4('black8');mudatema5('blacktable');" >Mudar Tema</a> </div>               
     				</ul>
     			</div>
 			</li>
@@ -797,218 +796,318 @@ img.hover-shadow {
 </div>
 
 
-<!-- Área de Construção !-->
 
- <div>
+<div id="black1" class="calcenv" >
 
-    <article>
-			<main>
-		
-				  <div>
-	
-	<!--    Equacoes   !-->
-	
-	
-	<div class="blocodf" id="black2">
-
-	 <div style="width:100%;text-align:center;margin:30px 0px;height:80px;font-size:18px" id="previewasc"></div>
-    
-    <div class="uk-form uk-form-stacked"  id="frm" style="margin-top:20px" method="POST" action="" onsubmit="javascript:if(valida()==false) event.preventDefault();">
-        <div class="uk-grid">
-            <div class="uk-width-1-1">
-            	<label class="uk-form-label" >Escreva a Equação a ser calculada:</label>        
-            	<input type="text" class="uk-form-large uk-width-1-1,input" class="input" placeholder="" name="formula"  id="formula" onchange="mostraprev()" onkeyup="mostraprev()" onblur="setcarret()"/>
-            	            
-            </div>
-	</div>
-            <div class="uk-width-1-1">&nbsp;</div>
-            <div class="uk-width-1-1" style="text-align:center">
-		    
-		    <input type="button"  id="execCopy" style="color:white" class="uk-button" title="Mudar para modo Projetor de Equação" accesskey="13" value="Copiar" >
-		    
-            </div>
-        </div>
+<br>
+   <div id="equahd" >
+	<nav class="uk-navbar2" id="black2">	
+		<ul class="uk-navbar2-nav uk-hidden-small">
+        	<li class="uk-parent" data-uk-dropdown="">
+            	<a id="black3">Modo <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                     	<li><a onclick="menuescolhido(1)" class="uk-dropdown-close">Assistido</a></li>
+                        <li><a onclick="menuescolhido(2)" class="uk-dropdown-close">Convencional</a></li>
+                        <li><a onclick="menuescolhido(3)" class="uk-dropdown-close">Expressão</a></li>
+    				</ul>
+    			</div>
+    		</li>
+    		<li class="uk-parent" data-uk-dropdown="">
+    			<a id="black5">Arredondamento <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                     	<li><a onclick="menuescolhido(4)" class="uk-dropdown-close">Sem arredondamento</a></li>
+                        <li><a onclick="menuescolhido(5)" class="uk-dropdown-close">1 casa decimal</a></li>
+                        <li><a onclick="menuescolhido(6)" class="uk-dropdown-close">2 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(7)" class="uk-dropdown-close">3 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(8)" class="uk-dropdown-close">4 casas decimais</a></li>
+                        <li><a onclick="menuescolhido(9)" class="uk-dropdown-close">5 casas decimais</a></li>
+    				</ul>
+    			</div>
+    		</li>
+			<li class="uk-parent" data-uk-dropdown="">
+    			<a id="black6">Constantes <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                     	<li><a onclick="menuescolhido(10)" class="uk-dropdown-close">PI</a></li>
+                        <li><a onclick="menuescolhido(11)" class="uk-dropdown-close">Euler</a></li>
+                        <li><a onclick="menuescolhido(12)" class="uk-dropdown-close">Proporção Áurea</a></li>
+                        <li><a onclick="menuescolhido(13)" class="uk-dropdown-close">Pitágoras</a></li>
+                        <li><a onclick="menuescolhido(14)" class="uk-dropdown-close">Euler-Mascheroni</a></li>
+    				</ul>
+    			</div>
+    		</li>		
+    		<li class="uk-parent" data-uk-dropdown="">
+    			<a id="black7">Programação <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                		<li><a onclick="menuescolhido(27)" data-uk-modal="{target:'#alvofuncoes'}" class="uk-dropdown-close">Funções Programadas...</a></li>
+                     	<li><a onclick="menuescolhido(15)" data-uk-modal="{target:'#alvoprogramados'}" class="uk-dropdown-close">Expressões...</a></li>
+                        <li><a onclick="menuescolhido(16)" class="uk-dropdown-close">Salvar Expressão</a></li>
+    				</ul>
+    			</div>
+    		</li>
+    		<li class="uk-parent" data-uk-dropdown="">
+    			<a id="black8">Opções <i class="uk-icon-caret-down"></i></a>
+    			<div class="uk-dropdown uk-dropdown-navbar2 uk-dropdown-bottom">
+                	<ul class="uk-nav uk-nav-navbar2">
+                     	<li class="uk-nav-header subtitm">HISTÓRICO</li>
+                     	<li><a onclick="menuescolhido(17)" class="uk-dropdown-close">Salvar</a></li>
+                        <li style="margin-bottom:10px"><a onclick="menuescolhido(18)" class="uk-dropdown-close">Limpar</a></li>
+                     	<li class="uk-nav-divider"></li>
+                     	<li class="uk-nav-header subtitm" style="padding-top:15px">MEMÓRIA</li>
+                        <li><a onclick="menuescolhido(19)" class="uk-dropdown-close" data-uk-modal="{target:'#alvomemoria'}">Mostrar</a></li>
+                        <li><a onclick="menuescolhido(20)" class="uk-dropdown-close">Inserir</a></li>
+                        <li><a onclick="menuescolhido(21)" class="uk-dropdown-close">Gravar</a></li>
+                        <li><a onclick="menuescolhido(22)" class="uk-dropdown-close">Limpar</a></li>
+                        <li class="uk-nav-divider"></li>
+                     	<li class="uk-nav-header subtitm" style="padding-top:15px">TEMA</li>
+                        <li><a onclick="menuescolhido(23)" class="uk-dropdown-close">Padrão</a></li>
+                        <li><a onclick="menuescolhido(24)" class="uk-dropdown-close">Azul</a></li>
+                        <li><a onclick="menuescolhido(25)" class="uk-dropdown-close">Lilás</a></li>
+    				</ul>
+    			</div>
+    		</li>
+    	</ul>
+    </nav>
+	<table class="comandos" id="blacktable">	
+		<tr>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Calcular" onclick="calcula()">=</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar" onclick="limpa()">C</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar memória" onclick="limpamemoria()">MC</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Guardar valor do visor na memória" onclick="guardarmemoria()">MS</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Obter a soma entre o valor da memória e o valor do visor" onclick="somarmemoria()">M+</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Obter a subtração entre o valor do visor e o valor da memória" onclick="subtrairmemoria()">M-</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar histórico" onclick="limparhistorico()">HC</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Salvar histórico" onclick="salvarhistorico()">HS</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" title="Alternar entre Radianos, Graus e Grados" onclick="mudatrigmedida(this)">Rad</td>
+    	</tr>
+    </table>
+    <div id="painelConv"> 
+    	&nbsp;  	
     </div>
-
-
-
-<div id="resultado" class="uk-overflow-container" style="margin-top:20px,text" method="POST" action="">&nbsp;</div>
-
-<center>
+    <div class="painel" id="black4">
+    	<input type="text" id="TIExp" class="inputform uk-form-width-large" onkeyup="calculachange()" onkeydown="calculaenter(event)"/>
+    	<div id="LBSubResu"></div>
+    </div>
+	<div class="calc-hidden-small" id="painelcalcdesk">
+		<table class='calculadora calculadoradesk'>
+	
+		</table>
+	</div>
 	<div class="calc-visible-small" id="painelcalcmobi">
+	
+		<table class='calculadora calculadoramobi'>
+			<tr>
+				<td><div id="mb1" class="bt bt1 cnum" onclick="inserevalor('7')"><div data-uk-tooltip="{pos:'right'}" title="7" class='rodar'>7</div></div></td>
+				<td><div id="mb2" class="bt bt1 cnum" onclick="inserevalor('8')"><div data-uk-tooltip="{pos:'right'}" title="8" class='rodar'>8</div></div></td>
+				<td><div id="mb3" class="bt bt1 cnum" onclick="inserevalor('9')"><div data-uk-tooltip="{pos:'right'}" title="9" class='rodar'>9</div></div></td>
+				<td><div id="mb4" class="bt bt2 ccom" onclick="inserevalor('+')"><div data-uk-tooltip="{pos:'top'}" title="Adição" class='rodar'>+</div></div></td>
+				<td><div id="mb5" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="inserevalor('(')" title="Parêntese de abertura"><div class='rodar'>(</div></div></td>
+            </tr>
+			<tr>
+				<td><div id="mb9" class="bt bt1 cnum" onclick="inserevalor('4')"><div data-uk-tooltip="{pos:'right'}" title="4" class='rodar'>4</div></div></td>
+				<td><div id="mb10" class="bt bt1 cnum" onclick="inserevalor('5')"><div data-uk-tooltip="{pos:'right'}" title="5" class='rodar'>5</div></div></td>
+				<td><div id="mb11" class="bt bt1 cnum" onclick="inserevalor('6')"><div data-uk-tooltip="{pos:'right'}" title="6" class='rodar'>6</div></div></td>
+				<td><div id="mb12" class="bt bt2 ccom" onclick="inserevalor('-')"><div data-uk-tooltip="{pos:'top'}" title="Subtração" class='rodar'>-</div></div></td>
+			<!-- escondere div	<td><div id="mb42" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('frac','b42','m')" title="Transformar Decimal em Fração<br>frac(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>a/b</div><div id='mdpb42' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>     !-->
+			    <td><div id="mb13" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="inserevalor(')')" title="Parêntese de fechamento"><div class='rodar'>)</div></div></td>
+			</tr>
+			<tr>
+				<td><div id="mb17" class="bt bt1 cnum" onclick="inserevalor('1')"><div data-uk-tooltip="{pos:'right'}" title="1" class='rodar'>1</div></div></td>
+				<td><div id="mb18" class="bt bt1 cnum" onclick="inserevalor('2')"><div data-uk-tooltip="{pos:'right'}" title="2" class='rodar'>2</div></div></td>
+				<td><div id="mb19" class="bt bt1 cnum" onclick="inserevalor('3')"><div data-uk-tooltip="{pos:'right'}" title="3" class='rodar'>3</div></div></td>
+				<td><div id="mb20" class="bt bt2 ccom" onclick="inserevalor('×')"><div data-uk-tooltip="{pos:'top'}" title="Multiplicação" class='rodar'>x</div></div></td>
+				 <!-- escondere div   <td><div id="mb41" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('fatorar','b41','m')" title="Fatoração<br>fatorar(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>a*b</div><div id='mdpb41' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td> !-->
+                <td class='tdln'><div id="b74" class="bt bt2 ccom" data-uk-tooltip="{pos:'left'}" onclick="pcalc('ex','b74','d')" title="Antilogaritmo natural<br>ex(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}">e<sup>x</sup><div id='dpb74' class='uk-dropdown dpdw_' onclick='event.stopPropagation()'></div></div></td>
+			</tr>
+			<tr>
+				<td><div id="mb25" class="bt bt1 cnum" onclick="inserevalor('0')"><div data-uk-tooltip="{pos:'right'}" title="0" class='rodar'>0</div></div></td>
+				<td><div id="mb26" class="bt bt1 cnum" onclick="inserevalor(',')"><div data-uk-tooltip="{pos:'right'}" title="," class='rodar'>,</div></div></td>
+				<td><input type="button" class="flotlft flotlftblue" value="←" data-uk-tooltip title="Apagar" name="apaga"></td>
+				<td><div id="mb28" class="bt bt2 ccom" onclick="inserevalor('/')"><div  data-uk-tooltip="{pos:'top'}" title="Divisão"class='rodar'>÷</div></div></td>
+		   	    <td><div id="mb27" class="bt bt2 ccom" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="calcula()" title="Calcular"><div class='rodar'>=</div></div></td>               			
+			</tr>
+			<table id="calcuPDR" class='calculadora calculadoramobi'>
+			<tr>
+				<td><div id="mb23" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('raizn','b23','m')" title="Raiz enésima<br>raizn(x;y)<br/><br/>Entradas:<br/>Radicando<br/>Índice<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'><sup>y</sup>√</div><div id='mdpb23' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb6" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:5}" onclick="precalcula('r3','b6','m')" title="Regra de três simples<br>Diretamente proporcional<br>r3(a;b;c)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>R3</div><div id='mdpb6' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb7" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="inserevalor('mod')" title="Módulo<br>Resto de uma divisão"><div class='rodar'>mod</div></div></td>
+				<td><div id="mb8" class="bt bt2 ccom" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('!','b8','m')" title="Fatorial<br>!(n)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>n!</div><div id='mdpb8' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb71" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('mmc','b71','m')" title="Mínimo Múltiplo Comum<br>mmc(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>MMC</div><div id='mdpb71' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			</tr>			
+			<tr>
+				<td><div id="mb31" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('exp','b31','m')" title="Exponencial<br>exp(x;y)<br/><br/>Entradas:<br/>Base<br/>Expoente<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>y</sup></div><div id='mdpb31' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb14" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('%','b14','m')" title="Porcentagem<br>%(x;y)<br/><br/>Entradas:<br/>Porcentagem<br/>Base de cálculo<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>%</div><div id='mdpb14' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb15" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('log','b15','m')" title="Logaritmo<br>log(x;y)<br/><br/>Entradas:<br/>Logaritmando<br/>Base<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>log</div><div id='mdpb15' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb70" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('perc','b70','m')" title="Percentual<br>perc(a;b)<br/><br/>Entradas:<br/>Valor de A<br/>Valor de B<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>%p</div><div id='mdpb70' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb72" class="bt bt2 ccom" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('mdc','b72','m')" title="Máximo Divisor Comum<br>mdc(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>MDC</div><div id='mdpb72' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			</tr>			
+			<tr>
+				<td><div id="mb21" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('raiz','b21','m')" title="Raiz quadrada<br>raiz(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>√</div><div id='mdpb21' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb22" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('raiz3','b22','m')" title="Raiz cúbica<br>raiz3(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'><sup>3</sup>√</div><div id='mdpb22' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+                <td><div id="mb46" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:5}" onclick="precalcula('convc','b46','m')" title="Conversão de Comprimento<br>convc(x,de,para)<br/><br/>Entradas:<br/>Valor a converter<br/>Medida da conversão<br/>Medida da conversão<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>comp</div><div id='mdpb46' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb16" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('sen','b16','m')" title="Seno<br>sen(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>sen</div><div id='mdpb16' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td class='tdln'><div id="b75" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="pcalc('por','b75','d')" title="Descobrir Porcentagem<br>por(i,f)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}">%?<div id='dpb75' class='uk-dropdown dpdw_ dpdm' onclick='event.stopPropagation()'></div></div></td>
+            </tr>			
+			<tr>
+				<td><div id="mb29" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('x2','b29','m')" title="Ao quadrado<br>x2(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>x<sup>2</sup></div><div id='mdpb29'  class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb30" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('x3','b30','m')" title="Ao cubo<br>x3(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>x<sup>3</sup></div><div id='mdpb30' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb47" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:5}" onclick="precalcula('convt','b47','m')" title="Conversão de Tempo<br>convt(x,de,para)<br/><br/>Entradas:<br/>Valor a converter<br/>Medida da conversão<br/>Medida da conversão<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>temp</div><div id='mdpb47' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+    			<td><div id="mb24" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('cos','b24','m')" title="Cosseno<br>cos(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>cos</div><div id='mdpb24' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b76" class="bt bt2 ccom" data-uk-tooltip="{pos:'right'}" onclick="pcalc('r3i','b76','d')" title="Regra de três simples<br>Inversamente proporcional<br>r3i(a;b;c)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}">r3i<div id='dpb76' class='uk-dropdown dpdw_ dpdm' onclick='event.stopPropagation()'></div></div></td>
+			</tr>
+			<tr>
+				<td><div id="mb41" class="bt bt2 ccom" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('fatorar','b41','m')" title="Fatoração<br>fatorar(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>a*b</div><div id='mdpb41' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb42" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('frac','b42','m')" title="Transformar Decimal em Fração<br>frac(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>a/b</div><div id='mdpb42' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb43" class="bt bt2 ccom" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('ale','b43','m')" title="Número Aleatório<br>ale(min;max)<br/><br/>Entradas:<br/>Mínimo<br/>Máximo<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>ale</div><div id='mdpb43' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb32" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('tg','b32','m')" title="Tangente<br>tg(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>tg</div><div id='mdpb32' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			    <td class='tdln'><div id="b73" class="bt bt2 ccom" data-uk-tooltip="{pos:'left'}" onclick="pcalc('ln','b73','d')" title="Logaritmo natural<br>ln(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}">ln<div id='dpb73' class='uk-dropdown dpdw_' onclick='event.stopPropagation()'></div></div></td>
+			</tr>
+		</table>
+		<table id="calcuTRI" class='calculadora calculadoramobi' style="display:none;">
+		    <tr>
+				<td><div id="mb33" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="inserevalor('π')" title="π"><div class='rodar'>π</div></div></td>
+				<td><div id="mb34" class="bt bt5 ctrig" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('hip','b34','m')" title="Hipotenusa<br>hip(c1;c2)<br/><br/>Entradas:<br/>Cateto A<br/>Cateto B<br/>" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>hip</div><div id='mdpb34' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb35" class="bt bt5 ctrig" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('cotg','b35','m')" title="Cotangente<br>cotg(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>cotg</div><div id='mdpb35' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb36" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('sec','b36','m')" title="Secante<br>sec(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>sec</div><div id='mdpb36' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+            	<td><div id="mb44" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('apr','b44','m')" title="Ângulo para Radiano<br>apr(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>a/r</div><div id='mdpb44' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			</tr>
+			<tr>
+				<td><div id="mb37" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('cosec','b37','m')" title="Cossecante<br>cosec(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>cosec</div><div id='mdpb37' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb38" class="bt bt5 ctrig" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('asen','b38','m')" title="Arco seno<br>asen(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>sen<sup>-1</sup></div><div id='mdpb38' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb39" class="bt bt5 ctrig" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('acos','b39','m')" title="Arco cosseno<br>acos(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>cos<sup>-1</sup></div><div id='mdpb39' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb40" class="bt bt5 ctrig" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('atg','b40','m')" title="Arco tangente<br>atg(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>tg<sup>-1</sup></div><div id='mdpb40' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb45" class="bt bt5 ctrig" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('rpa','b45','m')" title="Radiano para Ângulo<br>rpa(x)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>r/a</div><div id='mdpb45' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			</tr>
+		</table>
+	    <table id="calcuFIN" class='calculadora calculadoramobi' style="display:none;">
+		    <tr>		
+				<td><div id="b49" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jcmontante','b49','d')" title="Juro Composto<br>Montante - Valor Futuro<br>jcmontante(P;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>VF (c)</div><div id='dpb49' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b50" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jc','b50','d')" title="Juro Composto<br>jc(P;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>J (c)</div><div id='dpb50' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b51" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jcvp','b51','d')" title="Juro Composto<br>Valor Presente - Principal<br>jcvp(M;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>VP (c)</div><div id='dpb51' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b52" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jcn','b52','d')" title="Juro Composto<br>Número de Períodos<br>jcn(P;i;M)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>n (c)</div><div id='dpb52' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			    <td><div id="b56" class="bt bt3 cfin" data-uk-tooltip="{pos:'left'}" onclick="precalcula('valoravista','b56','d')" title="Valor à vista<br>valoravista(R;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>A</div><div id='dpb56' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>    
+			</tr>			
+			<tr>
+				
+				<td><div id="b53" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jci','b53','d')" title="Juro Composto<br>Taxa de Juros<br>jci(P;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>i (c)</div><div id='dpb53' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b54" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jciam','b54','d')" title="Conversão de taxa composta<br>Anual para Mensal<br>jciam(ia)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>iam (c)</div><div id='dpb54' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b55" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('jcima','b55','d')" title="Conversão de taxa composta<br>Mensal para Anual<br>jcima(im)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>ima (c)</div><div id='dpb55' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+			    <td><div id="b61" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('objp','b61','d')" title="Aportes periódicos para objetivo<br>objp(o;ai;t;i)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>p (obj)</div><div id='dpb61' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b62" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('obja','b62','d')" title="Aporte Inicial para objetivo<br>obja(o;t;p;i)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>ai (obj)</div><div id='dpb62' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 
-	<table class='calculadora calculadoradesk'>
-	
-	<tr>
-	
-	<td><div class="flotlft flotlftblue" data-uk-tooltip title="Parêntese de arbetura" onclick="insere('(')">
-        (
-    </div></td>
-	<td><div class="flotlft flotlftblue" data-uk-tooltip title="Parêntese de fechamento" onclick="insere(')')">
-        )
-    </div></td>
-   
-   <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Multiplicação" onclick="insere('*')">
-        *
-    </div></td>
-    <td><div class="flotlft flotlftblue" data-uk-tooltip title="Divisão" onclick="insere('/')">
-        &#247;
-    </div> </td>
-   <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Pi" onclick="insere('π')">
-    	π        
-    </div></td>
-	</tr>
-	
-	<tr>
-    <td><div class="flotlft flotlftblue" data-uk-tooltip title="Ao quadrado" onclick="insere('x^2')">
-        x<sup>2</sup>
-    </div></td>
-   <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Exponencial" onclick="insere('x^n')">
-        x<sup>n</sup>
-    </div></td>
-   <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Raiz quadrada" onclick="insere('raiz(x)')">
-        √
-    </div></td>
-	
-    <td><div class="flotlft flotlftblue" data-uk-tooltip title="Raiz cúbica" onclick="insere('raizn(3;x)')">
-        <sup>3</sup>√
-    </div></td>
-   <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Raiz enésima" onclick="insere('raizn(n;x)')">
-        <sup>n</sup>√
-    </div></td>
-	</tr>
-		 <tr>
-	 
-    <td><div class="flotlft flotlftdclear" data-uk-tooltip title="Arco seno hiperbólico" onclick="insere('asenh(x)')">
-        senh<sup>-1</sup>(x)
-    </div></td>
-    <td><div class="flotlft flotlftgreen" data-uk-tooltip title="Tangente" onclick="insere('tg(x)')">
-        tg(x)
-    </div></td>
-    <td><div class="flotlft flotlftgreen" data-uk-tooltip title="Seno"  onclick="insere('sen(x)')">
-        sen(x)
-    </div></td>
-    <td><div class="flotlft flotlftgreen" data-uk-tooltip title="Cosseno" onclick="insere('cos(x)')">
-        cos(x)
-    </div></td>
-    <td><div class="flotlft flotlftblue" data-uk-tooltip title="Logaritmo natural" onclick="insere('ln(x)')">
-        ln x
-    </div></td>
-	</tr>
-	
-	<tr>
-	
-    <td><div class="flotlft flotlftblue" data-uk-tooltip title="Logaritmo" onclick="insere('log(b;x)')">
-        log <sub>b</sub><sup>x</sup>
-    </div></td>
-        <td><div class="flotlft flotlftwhite" data-uk-tooltip title="9" onclick="insere('9')">
-       9
-    </div></td>
-	<td><div class="flotlft flotlftwhite" data-uk-tooltip title="8"  onclick="insere('8')">
-        8
-    </div></td>
-    <td><div class="flotlft flotlftwhite" data-uk-tooltip title="7" onclick="insere('7')">
-        7
-    </div></td>
-    <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Adição" onclick="insere('+')">
-        +
-    </div></td>
-    
-	</tr>
-	
-	<tr>
-	
-    <td><div class="flotlft flotlftgreen" data-uk-tooltip title="Cotange" onclick="insere('cotg(x)')">
-        cotg(x)
-    </div></td>
-     <td><div class="flotlft flotlftwhite" data-uk-tooltip title="6" onclick="insere('6')">
-       6
-    </div></td>
-	<td><div class="flotlft flotlftwhite" data-uk-tooltip title="5"  onclick="insere('5')">
-        5
-    </div></td>
-    <td><div class="flotlft flotlftwhite" data-uk-tooltip title="4" onclick="insere('4')">
-        4
-    </div></td>
-    <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Subtração" onclick="insere('-')">
-        -
-    </div></td>
-	</tr>
-	
-	<tr>
-	
-    <td><div class="flotlft flotlftdgreen" data-uk-tooltip title="Arco tangente" onclick="insere('atg(x)')">
-        tg<sup>-1</sup>(x)
-    </div></td>
-    <td><div class="flotlft flotlftwhite" data-uk-tooltip title="3" onclick="insere('3')">
-       3
-    </div></td>
-	<td><div class="flotlft flotlftwhite" data-uk-tooltip title="2"  onclick="insere('2')">
-        2
-    </div></td>
-    <td><div class="flotlft flotlftwhite" data-uk-tooltip title="1" onclick="insere('1')">
-        1
-    </div></td>
-    <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Multiplicação" onclick="insere('*')">
-        x
-    </div></td>
-	</tr>
-	
-	<tr>
-	
-    <td><div class="flotlft flotlftclear" data-uk-tooltip title="Cosseno hiperbólico" onclick="insere('cosh(x)')">
-        cosh(x)
-    </div></td>
-   <td><div class="flotlft flotlftwhite" data-uk-tooltip title="0" onclick="insere('0')">
-       0
-    </div></td>
-	<td><div class="flotlft flotlfwhitw" data-uk-tooltip title=","  onclick="insere(',')">
-        ,
-    </div></td>
-    <td><input type="button" class="flotlft flotlftwhite" value="←" data-uk-tooltip title="Apagar" name="apaga">
-        
-    </td>
-    <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Divisão" onclick="insere('/')">
-        ÷
-    </div></td>
-     </tr>
-	 
-	
-       </table>
+			</tr>			
+			<tr>
+				
+				<td><div id="b57" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante','b57','d')" title="Valor Futuro Composto<br>com aportes<br>montante(VP;R;i;n)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>S 1</div><div id='dpb57' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b58" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante2','b58','d')" title="Valor Futuro Composto<br>com aportes e saque<br>montante2(VP;R;i;n;s)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>S 2</div><div id='dpb58' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b59" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('montante3','b59','d')" title="Valor Futuro Composto<br>com Aporte, Saque e Inflação<br>montante3(VP;R;i;n;s;f)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>S 3</div><div id='dpb59' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+                <td><div id="b63" class="bt bt3 cfin" data-uk-tooltip="{pos:'right'}" onclick="precalcula('akk','b63','d')" title="Aportes para 1 Milhão<br>akk(ai;t;i)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>p (1M)</div><div id='dpb63' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="b64" class="bt bt3 cfin" data-uk-tooltip="{pos:'left'}" onclick="precalcula('tkk','b64','d')" title="Tempo até 1 Milhão<br>tkk(ai;p;i)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>t (1M)</div><div id='dpb64' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
 
-</div>
-</center>
-	 
-</div>
-
-<div id="prop_dentro">
-	
-</article>
-			</main>
-			
-					</div>
+		   </tr>			 
+		</table>
+		        <table id="calcuEST" class='calculadora calculadoramobi'  style="display:none;">
+                <td><div id="mb65" class="bt bt4 cest" data-uk-tooltip="{pos:'right',autofecha:true,d_:4}" onclick="precalcula('med','b65','m')" title="Média Aritmética<br>med(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-left'}"><div class='rodar'>M</div><div id='mdpb65' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb66" class="bt bt4 cest" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('medg','b66','m')" title="Média Geométrica<br>medg(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>MG</div><div id='mdpb66' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb67" class="bt bt4 cest" data-uk-tooltip="{pos:'top',autofecha:true,d_:4}" onclick="precalcula('medh','b67','m')" title="Média Harmônica<br>medh(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>MH</div><div id='mdpb67' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				<td><div id="mb68" class="bt bt4 cest" data-uk-tooltip="{pos:'left',autofecha:true,d_:4}" onclick="precalcula('medp','b68','m')" title="Média Ponderada<br>medp(w<sub>1</sub>*x<sub>1</sub>; w<sub>2</sub>*x<sub>2</sub>;...;w<sub>n</sub>*x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-right'}"><div class='rodar'>MP</div><div id='mdpb68' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+		        <td><div id="b69" class="bt bt4 cest" data-uk-tooltip="{pos:'right'}" onclick="precalcula('mediana','b69','d')" title="Mediana<br>mediana(x<sub>1</sub>;x<sub>2</sub>;...;x<sub>n</sub>)" data-uk-dropdown="{mode:'click',pos: 'bottom-center'}"><div class='rodar'>MD</div><div id='dpb69' class='uk-dropdown uk-dropdown_' onclick='event.stopPropagation()'></div></div></td>
+				</table>
+		</table>	
+	 </div>
+	</div>
 		
-								</div>
+
+<div class="histnone" id="hist">
+<div id="result" class="boxresult"></div>
+</div>		
+<div id="alvofuncoes" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close" id="btnfechaprog"></a>
+        <h3>Funções Programadas</h3>
+        <div id="alvofprogramadosc"></div>
+    </div>
+</div>
+<div id="alvoprogramados" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close" id="btnfechaprog"></a>
+        <h3>Expressões Salvas</h3>
+        <div id="alvoprogramadosc"></div>
+    </div>
+</div>
+<div id="alvomemoria" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <div id="alvomemoriac"></div>
+    </div>
+</div>
+<div id="alvocotacao" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close" id="btnfechacot"></a>
+        <div id="alvocotacaoc"></div>	
+	</div>
+</div>
 	
-	
-  	
-	<script>
+<div id="funcoesdin"></div>		
+
+</div>   	
+		
+					
+	<!-- Icons !-->	
+	<center>
+<div class="topnavdw">
+
+<a href="" > 
+<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Língua" src="imagens/branco/Prancheta1copia.png">
+</a>
+<a href="" > 
+<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Vídeos" src="imagens/branco/Prancheta1copia3.png">
+</a>
+<a href="C:\Users\vini_\OneDrive\Área de Trabalho\IndexApp\equa\equaAPP.html">  
+<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Mudar de Calculadora" src="imagens/branco/Prancheta1copia2.png">
+</a>
+<a href="javascript:void(0);" onclick="share()" > 
+<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Compartilhar" src="imagens/branco/Prancheta1copia7.png">
+</a>
+<a  onclick="Mudarestado('hist')" > 
+<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Histórico" src="imagens/branco/Prancheta1copia4.png">
+</a>
+
+ </center>
+  <a href="javascript:void(0);" class="icon-top-menu" onclick="myFunction()" >
+    <i class="fa fa-bars" >  </i> 
+  </a>
+</div>	
+<!-- Icons !-->	
+		
+		
+		<script>
         function Mudarestado(el) {
         var display = document.getElementById(el).style.display;
         if(display == "none")
             document.getElementById(el).style.display = 'block';
         else
             document.getElementById(el).style.display = 'none';
-    }  </script>	
-		
+    }  </script>
+	
+	<script>
+        function MudarestadoCAL(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'revert';
+        else
+            document.getElementById(el).style.display = 'none';
+    }  </script>
+	
 <script>	
-	var input = document.getElementById('formula');
-	input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
+	document.getElementById('formula').onkeypress=function(e){
+    if(e.keyCode==13){
         document.getElementById('execCopy').click('copy');
-      }
-    });
+    }
+}
 </script>
 
   <script type="text/javascript">
@@ -1018,60 +1117,25 @@ function execCopy() {
   document.execCommand("copy");
 } 
     </script>	
-
-
-
-<!-- Área de Construção !-->
-
-	
-	<!-- Icons !-->	
-	<center>
-<a href="" > 
-<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Língua" src="imagens/branco/Prancheta1copia.png">
-</a>
-<a href="https://matnowof.github.io/AppMN/indexApp.html" > 
-<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Vídeos" src="imagens/branco/Prancheta1copia3.png">
-</a>
-<a href="https://matnowof.github.io/AppMN/indexApp.html">  
-<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Mudar de Calculadora" src="imagens/branco/Prancheta1copia2.png">
-</a>
-<a href="javascript:void(0);" onclick="share()" > 
-<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Compartilhar" src="imagens/branco/Prancheta1copia7.png">
-</a>
-<a  onclick="https://matnowof.github.io/AppMN/indexApp.html" > 
-<img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Histórico" src="imagens/branco/Prancheta1copia4.png">
-</a>
-
- </center>
-  <a href="javascript:void(0);" class="icon-top-menu" onclick="myFunction()" >
-    <i class="fa fa-bars" >  </i> 
-  </a>
-</div>	
-<!-- Icons !-->		
-		
-
-<script type="text/javascript">
 	
 	
-	
-let wrapper = document.getElementById('jp-left');
-	const observer = new MutationObserver(function (mutations, observer) {
-	  wrapper.style.height = ''
-	  wrapper.style.minHeight = ''
-	})
-	observer.observe(wrapper, {
-	  attributes: true,
-	  attributeFilter: ['style']
-	})	
+	<script>
+	$("input[name=apaga]").click (function(){
+var len = $('#TIExp').val().length;
 
-</script>
+ var valor = $('#TIExp').val();
+ 
+ valor = valor.replace(valor.charAt(len - 1), '');
+ 
+ $('#TIExp').val(valor);
+});
+	</script>
 	
-	
-<script>
+	<script>
 	function share(){
 	if (navigator.share !== undefined) {
 		navigator.share({
-			title: 'O título da sua página',
+			title: 'Matemática NOW',
 			text: 'Um texto de resumo',
 			url: 'https://www.matematicanow.com.br',
 		})
