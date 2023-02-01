@@ -3,8 +3,9 @@ self.importScripts('/assets/localforage-1.10.0.min.js');
 // UPDATED: 2/2/22
 
 const CACHE_NAME = 'devtools-tips-v3';
-const INITIAL_CACHED_RESOURCES = [
-   '../indexApp.html',
+const INITIAL_CACHED_RESOURCES = [ 
+'/',
+'../indexApp.html',
 '../javascript_nova/gzip1041-2.js',
 '../gzipea95.js',
 '../gzip1041.js',
