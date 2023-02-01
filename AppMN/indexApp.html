@@ -39,9 +39,11 @@
 <link rel="manifest" href="PWA/manifest.json">
 <script src="PWA/manifest.json" ></script>
 
-<script src="https://gist.github.com/nitya/3aa3b72dc6abb177b577574f32382c7d.js"></script>
-	
-
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
 <!-- PWA !-->
 
 
