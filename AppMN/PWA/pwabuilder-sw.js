@@ -2,8 +2,10 @@
 
 const CACHE = "pwabuilder-offline";
 
-const INITIAL_CACHED_RESOURCES = [ 
-'../',
+this.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open('v1').then(function(cache) {
+      return cache.addAll([
 '../indexApp.html',
 '../javascript_nova/gzip1041-2.js',
 '../gzipea95.js',
@@ -30,8 +32,12 @@ const INITIAL_CACHED_RESOURCES = [
 '../imagens/branco/Prancheta1copia12.png',
 '../imagens/branco/Prancheta1copia9.png',
 '../imagens/branco/Prancheta1copia7.png',	
-'../imagens/branco/Prancheta1copia3.png',		
-];
+'../imagens/branco/Prancheta1copia3.png',
+      ]);
+    })
+  );
+});
+
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
@@ -47,3 +53,67 @@ workbox.routing.registerRoute(
     cacheName: CACHE
   })
 );
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches
+      .open("v1")
+      .then((cache) =>
+        cache.addAll([
+'../indexApp.html',
+'../javascript_nova/gzip1041-2.js',
+'../gzipea95.js',
+'../gzip1041.js',
+'../gzipe0f1.js',
+'../gzip8049.js',
+'../gzip8252.js',
+'../gzipdd81.js',
+'../basica-a.min.js',
+'../basica-c.min.js',
+'../basica-e.min.js',
+'../javascript_nova/bsc-a.min2.js',
+'../css/uikit.min.css',
+'../imagens/logo2',
+'../imagens/branco/Prancheta1copia2.png',
+'../imagens/branco/Prancheta1copia8.png',
+'../imagens/branco/Prancheta1copia5.png',
+'../imagens/branco/Prancheta1copia2.png',
+'../imagens/branco/Prancheta1copia10.png',
+'../imagens/branco/Prancheta1copia4.png',
+'../imagens/branco/Prancheta1copia14.png',
+'../imagens/branco/Prancheta1copia13.png',
+'../imagens/branco/Prancheta1copia.png',
+'../imagens/branco/Prancheta1copia12.png',
+'../imagens/branco/Prancheta1copia9.png',
+'../imagens/branco/Prancheta1copia7.png',	
+'../imagens/branco/Prancheta1copia3.png',
+        ])
+      )
+  );
+});
+
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      // caches.match() always resolves
+      // but in case of success response will have value
+      if (response !== undefined) {
+        return response;
+      } else {
+        return fetch(event.request)
+          .then((response) => {
+            // response may be used only once
+            // we need to save clone to put one copy in cache
+            // and serve second one
+            let responseClone = response.clone();
+
+            caches.open("v1").then((cache) => {
+              cache.put(event.request, responseClone);
+            });
+            return response;
+          })
+          .catch(() => caches.match("/gallery/myLittleVader.jpg"));
+      }
+    })
+  );
+});
+
