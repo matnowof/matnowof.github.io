@@ -26,11 +26,11 @@ const INITIAL_CACHED_RESOURCES = [
 '../imagens/branco/Prancheta1copia10.png',
 '../imagens/branco/Prancheta1copia4.png',
 '../imagens/branco/Prancheta1copia14.png',
-'../imagens/branco/Prancheta1copia13.png',
-'../imagens/branco/Prancheta1copia.png',
-'../imagens/branco/Prancheta1copia12.png',
+'/imagens/branco/Prancheta1copia13.png',
+'imagens/branco/Prancheta1copia.png',
+'imagens/branco/Prancheta1copia12.png',
 'imagens/branco/Prancheta1copia9.png',
-'/imagens/branco/Prancheta1copia7.png',	
+'./imagens/branco/Prancheta1copia7.png',	
 './imagens/branco/Prancheta1copia3.png',		
 ];
 // Cached resources that match the following strings should not be periodically updated.
