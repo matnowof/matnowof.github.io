@@ -2,7 +2,7 @@
 
 // UPDATED: 2/2/22
 
-const CACHE_NAME = 'v1';
+const CACHE_NAME = 'sw-page';
 const INITIAL_CACHED_RESOURCES = [ 
 '../',
 '../indexApp.html',
