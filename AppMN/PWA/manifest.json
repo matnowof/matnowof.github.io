@@ -9,9 +9,9 @@
   "display": "fullscreen",
   "name": "Matemática NOW",
   "orientation": "portrait",
-  "scope": "/",
+  "scope": "/AppMN",
   "short_name": "MNOW",
-  "start_url": "/",
+  "start_url": "/AppMN/indexApp.html",
   "theme_color": "#ffffff",
   "shortcuts": [],
   "categories": [
