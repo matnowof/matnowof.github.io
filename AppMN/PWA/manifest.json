@@ -10,6 +10,7 @@
   "name": "Matemática NOW",
   "orientation": "portrait",
   "short_name": "MNOW",
+  "scope": "/",
   "start_url": "/AppMN/indexApp.html",
   "theme_color": "#ffffff",
   "shortcuts": [],
