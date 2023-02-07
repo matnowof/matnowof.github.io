@@ -21,14 +21,14 @@ this.addEventListener('activate', function(event) {
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(function(pwabuilder-offline) {
+    caches.keys().then(function("pwabuilder-offline") {
       return Promise.all(
-        cacheNames.filter(function(pwabuilder-offline) {
+        cacheNames.filter(function("pwabuilder-offline") {
           // Return true if you want to remove this cache,
           // but remember that caches are shared across
           // the whole origin
-        }).map(function(pwabuilder-offline) {
-          return caches.delete(pwabuilder-offline);
+        }).map(function("pwabuilder-offline") {
+          return caches.delete("pwabuilder-offline");
         })
       );
     })
