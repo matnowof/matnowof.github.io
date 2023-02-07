@@ -1,6 +1,6 @@
 // This is the "Offline copy of pages" service worker
 
-const CACHE = "pwabuilderoffline";
+const CACHE = "pwabuilder-offline";
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
@@ -21,14 +21,14 @@ this.addEventListener('activate', function(event) {
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
-    caches.keys().then(function(pwabuilderoffline) {
+    caches.keys().then(function(pwabuilder-offline) {
       return Promise.all(
-        cacheNames.filter(function(pwabuilderoffline) {
+        cacheNames.filter(function(pwabuilder-offline) {
           // Return true if you want to remove this cache,
           // but remember that caches are shared across
           // the whole origin
-        }).map(function(pwabuilderoffline) {
-          return caches.delete(pwabuilderoffline);
+        }).map(function(pwabuilder-offline) {
+          return caches.delete(pwabuilder-offline);
         })
       );
     })
