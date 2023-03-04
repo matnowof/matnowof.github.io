@@ -140,7 +140,7 @@ td{width:12.5%;text-align:center}.calculadoramobi
 td{width:20%;text-align:center}.bt{line-height:35px;cursor:pointer;border:1px
 
 solid #aaa;border-radius:4px;color:#444;position:relative;margin:0.5px}.bt:hover{background:#009dd8;color:#fff;box-shadow:inset 0 2px 4px rgba(0,0,0,0.2)}.bt:active{background-color:#fff;color:#444}.calcenv{background-color:rgb(226, 226, 226);position:relative;z-index:1; margin:0px;padding:4px;border-radius:4px;border:1px
-solid #e4e1e1;box-shadow:0px 1px 10px 1px rgba(0,0,0,0.2)}.bt1{background-color:#FFFFFF}.bt2{background-color:#00A3E021}.bt3{background-color:#F9D37921}.bt4{background-color:#E0000014}.bt5{background-color:#51935821}.bt6{background-color:#00A3E021}.bt7{background-color:#28F9C82E}.bt8{background-color:#BCC2C02E}.bt5a{background-color:#C5DEF9}.bt3a{background-color:#3276CC0F}.bt4a{background-color:#1A4FCC24}.bt7a{background-color:#28DCF93D}.bt1l{background-color:#FFFFFF}.bt2l{background-color:#E000B321}.bt5l{background-color:#F9E9F3}.bt3l{background-color:#BD48CE3D}.bt4l{background-color:#5E0BD738}.bt7l{background-color:#E000B30F}.direit{text-align:right;width:100%;margin-top:5px;font-size:13px;color:#777}.quadf,.quade,.quadt,.quada,.quadl{display:inline-block;width:20px;height:14px;border-radius:4px;border:1px
+solid #e4e1e1;box-shadow:0px 1px 10px 1px rgba(0,0,0,0.2)}.bt1{background-color:#ffffff70}.bt2{background-color:#00A3E021}.bt3{background-color:#F9D37921}.bt4{background-color:#E0000014}.bt5{background-color:#51935821}.bt6{background-color:#00A3E021}.bt7{background-color:#28F9C82E}.bt8{background-color:#BCC2C02E}.bt5a{background-color:#C5DEF9}.bt3a{background-color:#3276CC0F}.bt4a{background-color:#1A4FCC24}.bt7a{background-color:#28DCF93D}.bt1l{background-color:#FFFFFF}.bt2l{background-color:#E000B321}.bt5l{background-color:#F9E9F3}.bt3l{background-color:#BD48CE3D}.bt4l{background-color:#5E0BD738}.bt7l{background-color:#E000B30F}.direit{text-align:right;width:100%;margin-top:5px;font-size:13px;color:#777}.quadf,.quade,.quadt,.quada,.quadl{display:inline-block;width:20px;height:14px;border-radius:4px;border:1px
 solid #e4e1e1;position:relative;top:3px}.boxmais{margin:0px;padding:20px
 0px 10px 0px;border-radius:4px;border:1px
 solid #F9F9F9;line-height:35px;color:#47677C;}.boxmais
@@ -882,7 +882,7 @@ img.hover-shadow {
     </nav>
 	<table class="comandos" id="blacktable">	
 		<tr>
-    		<td data-uk-tooltip="{pos:'bottom'}" title="Calcular" onclick="calcula()">=</td>
+    		<td data-uk-tooltip="{pos:'bottom'}" class="colar" title="Colar"><img src="imagens/icon/colar.png"></td>
     		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar" onclick="limpa()">C</td>
     		<td data-uk-tooltip="{pos:'bottom'}" title="Limpar memória" onclick="limpamemoria()">MC</td>
     		<td data-uk-tooltip="{pos:'bottom'}" title="Guardar valor do visor na memória" onclick="guardarmemoria()">MS</td>
@@ -897,7 +897,7 @@ img.hover-shadow {
     	&nbsp;  	
     </div>
     <div class="painel" id="black4">
-    	<input type="text" id="TIExp" class="inputform uk-form-width-large" onkeyup="calculachange()" onkeydown="calculaenter(event)"/>
+    	<input type="text" id="TIExp"  class="inputform uk-form-width-large TIExp" onkeyup="calculachange()" onkeydown="calculaenter(event)"/>
     	<div id="LBSubResu"></div>
     </div>
 	<div class="calc-hidden-small" id="painelcalcdesk">
@@ -1075,7 +1075,7 @@ img.hover-shadow {
 <a href="" > 
 <img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Vídeos" src="imagens/branco/Prancheta1copia3.png">
 </a>
-<a href="https://matnowof.github.io/AppMN/APPequa/equaAPP.html">  
+<a href="file:///D:/User/%C3%81rea%20de%20Trabalho/APPequa/equaAPP.html#">  
 <img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Mudar de Calculadora" src="imagens/branco/Prancheta1copia2.png">
 </a>
 <a href="javascript:void(0);" onclick="share()" > 
@@ -1111,23 +1111,23 @@ img.hover-shadow {
             document.getElementById(el).style.display = 'none';
     }  </script>
 	
-<script>	
-	document.getElementById('formula').onkeypress=function(e){
-    if(e.keyCode==13){
-        document.getElementById('execCopy').click('copy');
-    }
-}
+	
+	 <script>	
+	    const btnColar = document.querySelector('.colar');
+        const textAreaCampoB = document.querySelector('.TIExp');
+		
+		 // Aguardar o click do usuário no botão colar
+        btnColar.addEventListener('click', async (e) => {
+            //e.preventDefault();
+
+            // Utilizado o readText para ler o conteúdo
+            const resposta = await navigator.clipboard.readText();
+
+            // Enviar o texto para o campo B
+            textAreaCampoB.value = resposta;       
+        });
 </script>
 
-  <script type="text/javascript">
-document.getElementById('execCopy').addEventListener('click', execCopy);
-function execCopy() {
-  document.getElementById("formula").select();
-  document.execCommand("copy");
-} 
-    </script>	
-	
-	
 	<script>
 	$("input[name=apaga]").click (function(){
 var len = $('#TIExp').val().length;
