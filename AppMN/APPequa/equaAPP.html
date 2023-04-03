@@ -1,4 +1,27 @@
+<?php
+      if(isset($_POST['submit']))
+{
 
+include_once('config.php');
+
+$Sigla = ($_POST['Sigla']);
+$Nome = ($_POST['Nome']);
+$Como_Escrever = ($_POST['Como_Escrever']);
+$Descricao = ($_POST['Descricao']);
+
+$result = mysqli_query($conexao, "INSERT INTO testetab(Sigla,Nome,Como_Escrever,Descricao) 
+VALUES ('$Sigla','$Nome','$Como_Escrever','$Descricao')");
+}
+{
+include_once('config.php');	
+	
+$sql = "SELECT * FROM testetab ORDER BY id DESC";
+
+$result1 = $conexao->query($sql);
+
+print_r($result1);
+}
+?>
 
 <!DOCTYPE HTML>
 <html id="black1" lang="pt-br" dir="ltr" type="text/css">
@@ -43,8 +66,12 @@ MathJax = {
 <script src="ASCIIMathML.js"></script>
 <!--    Fonte     !-->
 
-
-
+<!--    CSS     !-->
+        <link rel="stylesheet" href="css/uikit.min.css"/>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+<!--    CSS     !-->
 
 <!--    Equação     !-->
 
@@ -98,6 +125,16 @@ function mudatema1(el) {
             document.getElementById(el).style.color = 'rgb(85, 85, 85)';
         else
             document.getElementById(el).style.color = 'rgb(255, 255, 255)';
+			}
+</script>
+
+<script>	
+ function mudaicon(el) {
+        var fill = document.getElementById(el).style.fill;
+        if(fill == "rgb(255, 255, 255)")
+            document.getElementById(el).style.fill = 'rgb(85, 85, 85)';
+        else
+            document.getElementById(el).style.fill = 'rgb(255, 255, 255)';
 			}
 </script>
 
@@ -206,7 +243,7 @@ a{display:block;width:26px;line-height:24px;text-align:center;color:#666;text-de
 solid transparent;border-radius:4px;background-origin:border-box}a.uk-datepicker-table-muted{color:#999}.uk-datepicker-table a:focus,
 .uk-datepicker-table a:hover{background-color:#fafafa;color:#666;outline:0;border-color:rgba(0,0,0,.2);border-bottom-color:rgba(0,0,0,.3);text-shadow:0 1px 0 #fff}.uk-datepicker-table a:active{background-color:#f5f5f5;color:#666;border-color:rgba(0,0,0,.2);border-top-color:rgba(0,0,0,.3);background-image:none;box-shadow:inset 0 2px 4px rgba(0,0,0,.1)}.uk-datepicker-table a.uk-active{background:#009dd8;color:#fff;border:1px
 solid rgba(0,0,0,.2);border-bottom-color:rgba(0,0,0,.4);background-origin:border-box;background-image:-webkit-linear-gradient(top,#00b4f5,#008dc5);background-image:linear-gradient(to bottom,#00b4f5,#008dc5);text-shadow:0 -1px 0 rgba(0,0,0,.2)}
-html{font:normal 14px / 20px opensans,helvetica,arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:rgb(226, 226, 226);color:#555}body{margin:0}a{background:transparent}a:active,a:hover{outline:0}a,.uk-link{color:#3f6488;text-decoration:none;cursor:pointer}a:hover,.uk-link:hover{color:#222;text-decoration:underline}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp{font-size:12px;font-family:Consolas,monospace,serif;color:#d05;white-space:nowrap}em{color:#d05}ins{background:#ffa;color:#555;text-decoration:none}mark{background:#ffa;color:#555}q{font-style:italic}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:inherit;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,canvas,img,svg,video{max-width:85%;height:auto;box-sizing:border-box;border:1px solid rgb(85, 85, 85);border-radius:4px;padding:7px}.uk-img-preserve,
+html{font:normal 14px / 20px opensans,helvetica,arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:rgb(226, 226, 226);color:#555}body{margin:0}a{background:transparent}a:active,a:hover{outline:0}a,.uk-link{color:#3f6488;text-decoration:none;cursor:pointer}a:hover,.uk-link:hover{color:#222;text-decoration:underline}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp{font-size:12px;font-family:Consolas,monospace,serif;color:#d05;white-space:nowrap}em{color:#d05}ins{background:#ffa;color:#555;text-decoration:none}mark{background:#ffa;color:#555}q{font-style:italic}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:inherit;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}audio,canvas,iframe,img,svg,video{vertical-align:middle}audio,canvas,img,svg,video{max-width:85%;height:auto;box-sizing:border-box;}.uk-img-preserve,
 .uk-img-preserve audio,
 .uk-img-preserve canvas,
 .uk-img-preserve img,
@@ -263,7 +300,7 @@ th{vertical-align:bottom}.uk-table caption,
 tfoot{font-size:12px;font-style:italic}.uk-table
 caption{text-align:left;color:#999}.uk-table tbody tr.uk-active{background:#eee}.uk-table-middle,
 .uk-table-middle
-td{vertical-align:middle !important}.uk-table-striped tbody tr:nth-of-type(odd){background:#f5f5f5}.uk-table-condensed
+td{vertical-align:middle !important}.uk-table-striped tbody  tr:nth-of-type(odd){background:#f5f5f5}.uk-table-condensed
 td{padding:4px
 8px}.uk-table-hover tbody tr:hover{background:#eee}.uk-form input,
 .uk-form select,
@@ -303,7 +340,7 @@ select{vertical-align:middle}.uk-form>:last-child{margin-bottom:0}.uk-form selec
 .uk-form input[type="url"],
 .uk-form input[type="search"],
 .uk-form input[type="tel"],
-.uk-form input[type="color"]{height:30px;max-width:100%;padding:4px
+.uk-form input[type="color"]{height:20px;max-width:100%;padding:4px
 6px;border:1px
 solid #ddd;background:#f2f2f2;color:#555;-webkit-transition:all 0.2s linear;-webkit-transition-property:border, background, color, box-shadow, padding;transition:all 0.2s linear;transition-property:border, background, color, box-shadow, padding}.uk-form select:focus,
 .uk-form textarea:focus,
@@ -563,11 +600,19 @@ a{color:#fff}*+p,*+hr,*+ul,*+ol,*+dl,*+blockquote,*+pre,*+address,*+fieldset,*+f
   width: 100%;
 }
 
-.tabela th td {
+.tabela th td tbody {
   text-align: left;
   padding: 8px;
+  
 }
 
+.tabelhinha{
+  position: absolute; 
+  height: 190px;
+  width: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 .tabela tr:nth-child(even) {background-color: #f2f2f2;}
 
 .overlay {
@@ -594,6 +639,7 @@ a{color:#fff}*+p,*+hr,*+ul,*+ol,*+dl,*+blockquote,*+pre,*+address,*+fieldset,*+f
   width: 90%;
   position: relative;
   transition: all 5s ease-in-out;
+  height: 550px;
 }
 
 .popup h2 {
@@ -738,6 +784,34 @@ img.hover-shadow {
 }
 </style>
 
+<style>
+
+#mySearch {
+  width: -webkit-fill-available;
+  font-size: 12px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+
 
 
 </head>
@@ -838,7 +912,7 @@ img.hover-shadow {
     			<a class="off-font" onclick="Mudarestado('textmenu7')"><i class="uk-icon-caret-down"> <img src="imagens/branco/Prancheta1copia13.png" width="60px"></i> Tema</a>
     		    <div>
                 	<ul>
-                     	<li id="textmenu7" style="display:none;"><a onclick="UIkit.offcanvas.hide();mudatema1('black1');mudatema2('black2');mudatema3('black1');" >Mudar Tema</a>               
+                     	<li id="textmenu7" style="display:none;"><a onclick="UIkit.offcanvas.hide();mudatema1('black1');mudatema2('black2');mudatema3('black1');mudaicon('pergunta');mudatema1('black3');mudatema1('black4');mudatema1('black5');mudatema2('popup');mudatema2('popup2');" >Mudar Tema</a>               
     				</ul>
     			</div>
 			</li>
@@ -883,66 +957,196 @@ img.hover-shadow {
     <div class="uk-form uk-form-stacked"  id="frm" style="margin-top:20px" method="POST" action="" onsubmit="javascript:if(valida()==false) event.preventDefault();">
         <div class="uk-grid">
             <div class="uk-width-1-1">
-            	<label class="uk-form-label" >Escreva a Equação a ser calculada: <a href="#popup1"><img style="float:right" src="imagens/Icon/help.png"></a></label> 
+            	<label class="uk-form-label" >Escreva a Equação a ser calculada: <a href="#popup02"> <svg  width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="float:right;width:20px;"><a href="#popup1"> </a>
+<path d="M12 7V17M7 12H17M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+
+
+
+
+
+<a href="#popup1"> <svg width="800px" id="pergunta" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="float:right;width:20px;fill:rgb(85, 85, 85)";> 
+<path d="M12 3C7.04 3 3 7.04 3 12C3 16.96 7.04 21 12 21C16.96 21 21 16.96 21 12C21 7.04 16.96 3 12 3ZM12 19.5C7.86 19.5 4.5 16.14 4.5 12C4.5 7.86 7.86 4.5 12 4.5C16.14 4.5 19.5 7.86 19.5 12C19.5 16.14 16.14 19.5 12 19.5ZM14.3 7.7C14.91 8.31 15.25 9.13 15.25 10C15.25 10.87 14.91 11.68 14.3 12.3C13.87 12.73 13.33 13.03 12.75 13.16V13.5C12.75 13.91 12.41 14.25 12 14.25C11.59 14.25 11.25 13.91 11.25 13.5V12.5C11.25 12.09 11.59 11.75 12 11.75C12.47 11.75 12.91 11.57 13.24 11.24C13.57 10.91 13.75 10.47 13.75 10C13.75 9.53 13.57 9.09 13.24 8.76C12.58 8.1 11.43 8.1 10.77 8.76C10.44 9.09 10.26 9.53 10.26 10C10.26 10.41 9.92 10.75 9.51 10.75C9.1 10.75 8.76 10.41 8.76 10C8.76 9.13 9.1 8.32 9.71 7.7C10.94 6.47 13.08 6.47 14.31 7.7H14.3ZM13 16.25C13 16.8 12.55 17.25 12 17.25C11.45 17.25 11 16.8 11 16.25C11 15.7 11.45 15.25 12 15.25C12.55 15.25 13 15.7 13 16.25Z"/>
+</svg></a></label> 
+ <!--    Popup Criador     !-->  
+<div id="popup02" class="overlay">
+	<div id="popup2" class="popup">
+		<h2>Escreva as suas ou use da comunidade</h2>
+		<a class="close" href="#">×</a>
+<br>
+<table style="width:100%;text-align:left;margin-top:10px" ><tbody>
+<h4>Escreva as suas funções</h4>
+<tr>
+      <th>Sigla</th>
+      <th>Nome</th>
+      <th>Como escrever</th>
+      <th>Descrição</th>
+</tr>
+   <form action="equaAPP.php"  method="POST" >
+<td> <input name="Sigla" id="Sigla" type="text" class="cemp" style="width:90%" placeholder="FMBK " onblur="atzarrayf();verifnfunc(this)" onkeypress="alphanum(event)" required> </td>
+<td> <input name="Nome" id="Nome" type="text" class="cemp" style="width:90%" placeholder="Bhaskara" onblur="atzarrayf()required" required> </td> 
+<td> <input name="Como_Escrever" id="Como_Escrever" type="text" class="cemp" style="width:90%" placeholder="(-b+raiz(b^2-4*a*c))/(2*a)" onblur="atzarrayf();verifnfunc(this)" onkeypress="alphanum(event)" required> </td>
+<td> <input name="Descricao" id="Descricao" type="text" class="cemp" style="width:90%" placeholder="Fórmula de Bhaskara" onblur="atzarrayf();verifnfunc(this)" onkeypress="alphanum(event)" required> </td> 
+<input type="submit" style="cursor:pointer;width:60px" id="submit" name="submit" title="Salvar" Salvar> 
+   </form>
+</table>
+<br>
+<!--<td onclick="apagafunpg(this.parentNode)" style="cursor:pointer;width:20px" title="Apagar">!-->
+
+
+<h4>Busque funções de outros usuários</h4>
+  <div class="left" style="background-color:#bbb;">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Procurar Equações" title="Type in a category">
+
+  </div>
+  <table class="tabela" id="myMenu">
+   <tbody class="tabelhinha">
+    <tr>
+	  <th>Sigla</th>
+      <th>Nome</th>
+      <th>Como escrever</th>
+      <th>Descrição</th>
+    </tr>
+	<?php
+	while($user_data = mysqli_fetch_assoc($result1))
+	{
+		echo "<tr>";
+		echo "<td><a style='display:none;'>".$user_data['Nome']."</a>".$user_data['Sigla']."</td>";
+		echo "<td><a style='display:none;'>".$user_data['Nome']."</a>".$user_data['Nome']."</td>";
+		echo "<td><a style='display:none;'>".$user_data['Nome']."</a>".$user_data['Como_Escrever']."</td>";
+		echo "<td><a style='display:none;'>".$user_data['Nome']."</a>".$user_data['Descricao']."</td>";
+		echo "<td><a style='display:none;'>".$user_data['Nome']."</a>"; 
+		echo "<a style='cursor:pointer;' title='Copiar resultado para área de expressão' onclick='cp_exp(&#34;(-b+raiz(b^2-4*a*c))/(2*a)&#34;);'> <img src='imagens/Icon/curved-up-arrow.png'> </a>";echo "</td>";
+		echo "</tr>";
+	}
+	?>
+	<!--"<a style='cursor:pointer;' title='Copiar resultado para área de expressão' onclick='UIkit.offcanvas.hide();cp_exp('.$user_data['Como_Escrever'].');'>" "</a>" !-->
+	<!--echo "<td><a style='display:none;'>".$user_data['Nome']."</a>"; 
+		echo "<a style='cursor:pointer;' title='Copiar resultado para área de expressão onclick='cp_exp('(-b+raiz(b^2-4*a*c))/(2*a)');'> <img src='imagens/Icon/curved-up-arrow.png'> </a>";echo "</td>";!-->
+		
+    <tr id="black3">
+      <td> <a style="display:none;" href="#">Bhaskara </a> FMBK </td>
+      <td> <a style="display:none;" href="#">Bhaskara </a> Bhaskara</td>
+      <td> <a style="display:none;" href="#">Bhaskara </a>(-b+raiz(b^2-4*a*c))/(2*a)</td>
+      <td> <a style="display:none;" href="#">Bhaskara </a>Fórmula de Bhaskara   </td> 
+      <td> <a style="display:none;" href="#">Bhaskara </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(-b+raiz(b^2-4*a*c))/(2*a)');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+	</tr>
+    <tr>
+      <td> <a style="display:none;" href="#">Segundo Grau </a> FSG</td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a> Segundo Grau</td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a>(-b+raiz(Delta))/2×a</td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a>Fórmula de Segundo Grau </td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(-b+raiz(Delta))/2×a');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+    </tr>
+    <tr id="black4">
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>FTPG</td>
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>Teorema de Pitágoras</td>
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>x2(a) = x2(b)x2(c)</td>
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>Teorema de Pitágoras </td> 
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('x2(a) = x2(b)x2(c)');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+	</tr>
+	<tr>
+      <td> <a style="display:none;" href="#">Delta </a>DLA</td>
+      <td> <a style="display:none;" href="#">Delta </a>Delta</td>
+      <td> <a style="display:none;" href="#">Delta </a>Delta = x2(b) - 4*a*c</td>
+      <td> <a style="display:none;" href="#">Delta </a>Fórmula de Primeiro </td> 
+      <td> <a style="display:none;" href="#">Delta </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('x2(b) - 4*a*c');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+	</tr>
+	<tr id="black5">
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>EDQP</td>
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>Equação da Elipse</td>
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>(x-h/a)^2+(y-k/b)^2</td>
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>Equação da Elipse </td> 
+      <td> <a style="display:none;" href="#">Equação da Elipse </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(x-h/a)^2+(y-k/b)^2');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+	</tr>
+	<tr>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>DEDP</td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>Distância entre dois Pontos</td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>(x+x2)/2+(y+y2)/2</td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>Distância entre dois Pontos </td> 
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a><a style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(x+x2)/2+(y+y2)/2');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+	</tr>
+   </tbody>
+  </table>
+
+</div>
+
+      </div>
+     </div>	
+	</div>
+   </div>
+ <!--    Popup Criador     !-->   
+
+
 <div id="popup1" class="overlay">
-	<div class="popup">
+	<div id="popup" class="popup">
 		<h2>Aprenda a Escrever Equações</h2>
 		<a class="close" href="#">×</a>
-		<center><video autoplay="" loop="" controls="" style="width:80%;" class="hover-shadow cursor"> <source src="videos/equa/Equacao.webm" type="video/webm">  </video></center>
-	<div class="uk-overflow-container" style="padding: 5px; max-height: 753px;"><div style="text-align:right;width:100%"> </div><div style="margin-top:30px;text-align:justify"><blockquote style="font-size:9px"> <p>Escreva a função atribuindo um nome seguido de parênteses contendo uma ou mais variáveis separadas por ponto e vírgula (;). No segundo campo, escreva o que a função deve calcular utilizando operadores, funções nativas da calculadora ou outras funções criadas por você. </p><div style="overflow-x: auto;">
-  <table class="tabela">
+		<center><video autoplay="" loop="" controls="" style="width:80%;" class="hover-shadow cursor"> <source src="videos/Equa/Equacao.webm" type="video/webm">  </video></center>
+	<div class="uk-overflow-container" style="padding: 5px; max-height: 753px;"><div style="text-align:right;width:100%"> </div><div style="margin-top:30px;text-align:justify"><blockquote style="font-size:9px"> <p>Escreva a função atribuindo um nome seguido de parênteses contendo uma ou mais variáveis separadas por ponto e vírgula (;). No segundo campo, escreva o que a função deve calcular utilizando operadores, funções nativas da calculadora ou outras funções criadas por você. </p>
+    
+	<div class="left" style="background-color:#bbb;">
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Procurar Equações" title="Type in a category">
+
+  </div>
+  <!--    Popup Interrogação     !-->
+  <table class="tabela" id="myMenu">
+   <tbody class="tabelhinha">
     <tr>
       <th>Sigla</th>
       <th>Nome</th>
       <th>Como escrever</th>
       <th>Descrição</th>
     </tr>
-    <tr>
-      <td>FNBK </td>
-      <td>Bhaskara</td>
-      <td>(-b+raiz(b^2-4*a*c))/(2*a)</td>
-      <td>Fórmula de Segundo Grau   </td> 
-      <td><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="cp_exp('(-b+raiz(b^2-4*a*c))/(2*a)')"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+    <tr id="black3">
+      <td> <a style="display:none;" href="#">Bhaskara </a> FMBK </td>
+      <td> <a style="display:none;" href="#">Bhaskara </a> Bhaskara</td>
+      <td> <a style="display:none;" href="#">Bhaskara </a>(-b+raiz(b^2-4*a*c))/(2*a)</td>
+      <td> <a style="display:none;" href="#">Bhaskara </a>Fórmula de Bhaskara   </td> 
+      <td> <a style="display:none;" href="#">Bhaskara </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(-b+raiz(b^2-4*a*c))/(2*a)');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
 	</tr>
     <tr>
-      <td>FSG</td>
-      <td>Segundo Grau</td>
-      <td>(-b+raiz(Delta))/2×a</td>
-      <td>Fórmula de Segundo Grau </td>
-      <td><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="cp_exp('(-b+raiz(Delta))/2×a')"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a> FSG</td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a> Segundo Grau</td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a>(-b+raiz(Delta))/2×a</td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a>Fórmula de Segundo Grau </td>
+      <td> <a style="display:none;" href="#">Segundo Grau </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(-b+raiz(Delta))/2×a');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
     </tr>
-    <tr>
-      <td>FTPG</td>
-      <td>Teorema de Pitágoras</td>
-      <td>x2(a) = x2(b)x2(c)</td>
-      <td>Teorema de Pitágoras </td> 
-      <td><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="cp_exp('x2(a) = x2(b)x2(c)')"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+    <tr id="black4">
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>FTPG</td>
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>Teorema de Pitágoras</td>
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>x2(a) = x2(b)x2(c)</td>
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a>Teorema de Pitágoras </td> 
+      <td> <a style="display:none;" href="#">Teorema de Pitágoras </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('x2(a) = x2(b)x2(c)');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
 	</tr>
 	<tr>
-      <td>DLA</td>
-      <td>Delta</td>
-      <td>Delta = x2(b) - 4*a*c</td>
-      <td>Fórmula de Primeiro </td> 
-      <td><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="cp_exp('x2(b) - 4*a*c')"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+      <td> <a style="display:none;" href="#">Delta </a>DLA</td>
+      <td> <a style="display:none;" href="#">Delta </a>Delta</td>
+      <td> <a style="display:none;" href="#">Delta </a>Delta = x2(b) - 4*a*c</td>
+      <td> <a style="display:none;" href="#">Delta </a>Fórmula de Primeiro </td> 
+      <td> <a style="display:none;" href="#">Delta </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('x2(b) - 4*a*c');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+	</tr>
+	<tr id="black5">
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>EDQP</td>
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>Equação da Elipse</td>
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>(x-h/a)^2+(y-k/b)^2</td>
+      <td> <a style="display:none;" href="#">Equação da Elipse </a>Equação da Elipse </td> 
+      <td> <a style="display:none;" href="#">Equação da Elipse </a><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(x-h/a)^2+(y-k/b)^2');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
 	</tr>
 	<tr>
-      <td>EDQP</td>
-      <td>Equação da Elipse</td>
-      <td>(x-h/a)^2+(y-k/b)^2</td>
-      <td>Equação da Elipse </td> 
-      <td><a  style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="cp_exp('(x-h/a)^2+(y-k/b)^2')"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>DEDP</td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>Distância entre dois Pontos</td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>(x+x2)/2+(y+y2)/2</td>
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a>Distância entre dois Pontos </td> 
+      <td> <a style="display:none;" href="#">Distância entre dois Pontos </a><a style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="UIkit.offcanvas.hide();cp_exp('(x+x2)/2+(y+y2)/2');"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
 	</tr>
-	<tr>
-      <td>DEDP</td>
-      <td>Distância entre dois Pontos</td>
-      <td>(x+x2)/2+(y+y2)/2</td>
-      <td>Distância entre dois Pontos </td> 
-      <td><a style="cursor:pointer;" title="Copiar resultado para área de expressão" onclick="cp_exp('(x+x2)/2+(y+y2)/2')"><img src="imagens/Icon/curved-up-arrow.png"></a></td>
-	</tr>
+   </tbody>
   </table>
 </div></div></div>
 	</div>
-</div>				
+	</div>
+  <!--    Popup Interrogação     !-->	
             	<input type="text" class="uk-form-large uk-width-1-1,input" class="input" placeholder="" name="formula"  id="formula" onchange="mostraprev()" onkeyup="mostraprev()" onblur="setcarret()"/>
             	            
             </div>
@@ -1091,7 +1295,8 @@ img.hover-shadow {
 	<td><div class="flotlft flotlfwhitw" data-uk-tooltip title=","  onclick="insere(',')">
         ,
     </div></td>
-    <td><input type="button" class="flotlft flotlftwhite" value="←" data-uk-tooltip title="Apagar" name="apaga">
+    <td><input type="button" class="flotlft flotlftwhite" value="←" data-uk-tooltip title="Apagar" name="apaga"    style="background-color: #e1e1e170";
+>
         
     </td>
     <td> <div class="flotlft flotlftblue" data-uk-tooltip title="Divisão" onclick="insere('/')">
@@ -1143,6 +1348,24 @@ function execCopy() {
   document.execCommand("copy");
 } 
     </script>	
+	
+	<script>
+function myFunction() {
+  var input, filter, tr, td, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  tr = document.getElementById("myMenu");
+  td = tr.getElementsByTagName("td");
+  for (i = 0; i < td.length; i++) {
+    a = td[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      td[i].style.display = "";
+    } else {
+      td[i].style.display = "none";
+    }
+  }
+}
+</script>
 
 
 
@@ -1159,7 +1382,7 @@ function execCopy() {
 <a href="https://matnowof.github.io/AppMN/indexApp.html" > 
 <img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Vídeos" src="imagens/branco/Prancheta1copia3.png">
 </a>
-<a href="https://matnowof.github.io/AppMN/indexApp.html">  
+<a href="file:///D:/User/%C3%81rea%20de%20Trabalho/AppMN/indexApp.html">  
 <img class="imgmenudw" data-uk-tooltip="{pos:'top'}" title="Mudar de Calculadora" src="imagens/branco/Prancheta1copia2.png">
 </a>
 <a href="javascript:void(0);" onclick="share()" > 
