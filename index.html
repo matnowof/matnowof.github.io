@@ -14,7 +14,7 @@ $result = mysqli_query($conexao, "INSERT INTO testetab(Sigla,Nome,Como_Escrever,
 VALUES ('$Sigla','$Nome','$Como_Escrever','$Descricao')");
 }
 {
-include_once('config.php');	
+include_once('config.php');
 	
 $sql = "SELECT * FROM testetab ORDER BY id DESC";
 
