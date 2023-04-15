@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";
-$bancodedados = "Site1";
-$usuario = "root";
-$senha = "";
+$hostname = "aws.connect.psdb.cloud";
+$bancodedados = "site1";
+$usuario = "q6jdxmzducc5upz0uvez";
+$senha = "pscale_pw_tzptJZIAEPIcrTDLs4Wt0Rn8yFkETOdJS5AA02oDa0x";
 
 $conexao = new mysqli($hostname, $usuario, $senha, $bancodedados);
 
@@ -13,7 +13,7 @@ if($conexao->connect_errno)
 }
 else
 {
-   // echo "Conexão efetuada com sucesso ";
+    echo "Conexão efetuada com sucesso ";
 }
 
 ?>
